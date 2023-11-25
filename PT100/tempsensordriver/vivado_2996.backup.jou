@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Thu Nov 23 15:20:51 2023
+# Process ID: 2996
+# Current directory: C:/Users/alarc/OneDrive/Desktop/PT100/tempsensordriver
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11160 C:\Users\alarc\OneDrive\Desktop\PT100\tempsensordriver\tempsensordriver.xpr
+# Log file: C:/Users/alarc/OneDrive/Desktop/PT100/tempsensordriver/vivado.log
+# Journal file: C:/Users/alarc/OneDrive/Desktop/PT100/tempsensordriver\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/alarc/OneDrive/Desktop/PT100/tempsensordriver/tempsensordriver.xpr

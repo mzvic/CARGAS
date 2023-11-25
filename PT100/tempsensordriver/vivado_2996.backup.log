@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Thu Nov 23 15:20:51 2023
+# Process ID: 2996
+# Current directory: C:/Users/alarc/OneDrive/Desktop/PT100/tempsensordriver
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11160 C:\Users\alarc\OneDrive\Desktop\PT100\tempsensordriver\tempsensordriver.xpr
+# Log file: C:/Users/alarc/OneDrive/Desktop/PT100/tempsensordriver/vivado.log
+# Journal file: C:/Users/alarc/OneDrive/Desktop/PT100/tempsensordriver\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/alarc/OneDrive/Desktop/PT100/tempsensordriver/tempsensordriver.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/alarc/OneDrive/Desktop/tempsensors/tempsensordriver' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.1/data/ip'.
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/alarc/OneDrive/Desktop/PT100/tempsensordriver/tempsensordriver.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Nov 23 15:21:25 2023...
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 23 15:21:48 2023...
