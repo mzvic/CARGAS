@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Wed Nov 29 20:17:57 2023
+# Process ID: 8407
+# Current directory: /home/mzvic/CARGAS/PT100/tempsensordriver/tempsensordriver.runs/impl_2
+# Command line: vivado -log ts_pt100_wrapper.vdi -applog -messageDb vivado.pb -mode batch -source ts_pt100_wrapper.tcl -notrace
+# Log file: /home/mzvic/CARGAS/PT100/tempsensordriver/tempsensordriver.runs/impl_2/ts_pt100_wrapper.vdi
+# Journal file: /home/mzvic/CARGAS/PT100/tempsensordriver/tempsensordriver.runs/impl_2/vivado.jou
+#-----------------------------------------------------------
+source ts_pt100_wrapper.tcl -notrace

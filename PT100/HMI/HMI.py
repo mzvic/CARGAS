@@ -22,7 +22,7 @@ filesDateFormat = "%d%m%y"              #31122022
 #-------MeTODO DE INICIALIZACIoN----- -----------------------------------------
 # Obtiene la ruta absoluta del directorio actual
 script_directory = os.path.dirname(os.path.abspath(__file__))
-ui_folder = r"\ui\SDC_STEP_POW.ui"
+ui_folder = r"/ui/SDC_STEP_POW.ui"
 ui_dir = script_directory + ui_folder
 
 BAUDRATE_CONF = 19200
@@ -468,7 +468,7 @@ class Interfaz(QtWidgets.QMainWindow):
         
         #Convertion to Voltage
         self.PT100_V = (self.in_01*3.3/4095)
-        #print(self.PT100_V)
+        print(self.PT100_V)
 
 #Funcion desconcatenadora 7 bits ----------------------------------------------
 def FFtoF_F_F(val):

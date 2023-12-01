@@ -7,7 +7,7 @@
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="9ed9fc8586644e14bea9ed42e6667f2d"/>
-    <Option Name="Part" Val="xc7a100tcsg324-1"/>
+    <Option Name="Part" Val="xc7a35tcsg324-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
     <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
@@ -203,17 +203,17 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="ts_pt100.bd" FileRelPathName="hdl/ts_pt100.hwdef"/>
-        <CompFileExtendedInfo CompFileName="ts_pt100.bd" FileRelPathName="hw_handoff/ts_pt100_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="ts_pt100.bd" FileRelPathName="hw_handoff/ts_pt100.hwh"/>
-        <CompFileExtendedInfo CompFileName="ts_pt100.bd" FileRelPathName="ts_pt100_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="ts_pt100.bd" FileRelPathName="ip/ts_pt100_clk_box_0_0/ts_pt100_clk_box_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ts_pt100.bd" FileRelPathName="ip/ts_pt100_clk_wiz_0_0/ts_pt100_clk_wiz_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ts_pt100.bd" FileRelPathName="ip/ts_pt100_package_ext_0_0/ts_pt100_package_ext_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="ts_pt100.bd" FileRelPathName="ip/ts_pt100_fixedPoint_0_0/ts_pt100_fixedPoint_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ts_pt100.bd" FileRelPathName="ts_pt100_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="ts_pt100.bd" FileRelPathName="hw_handoff/ts_pt100.hwh"/>
+        <CompFileExtendedInfo CompFileName="ts_pt100.bd" FileRelPathName="hw_handoff/ts_pt100_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="ts_pt100.bd" FileRelPathName="hdl/ts_pt100.hwdef"/>
         <CompFileExtendedInfo CompFileName="ts_pt100.bd" FileRelPathName="ip/ts_pt100_AD1_driver_v_0_0/ts_pt100_AD1_driver_v_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="ts_pt100.bd" FileRelPathName="ip/ts_pt100_alarm_HT_v_0_0/ts_pt100_alarm_HT_v_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="ts_pt100.bd" FileRelPathName="hdl/ts_pt100.v"/>
+        <CompFileExtendedInfo CompFileName="ts_pt100.bd" FileRelPathName="ip/ts_pt100_clk_wiz_0_0/ts_pt100_clk_wiz_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ts_pt100.bd" FileRelPathName="ip/ts_pt100_package_ext_0_0/ts_pt100_package_ext_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="ts_pt100.bd" FileRelPathName="ip/ts_pt100_fixedPoint_0_0/ts_pt100_fixedPoint_0_0.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/ts_pt100/hdl/ts_pt100_wrapper.v">
         <FileInfo>
@@ -276,14 +276,36 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
+    <Run Id="synth_2" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a35tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_2" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="impl_2" Type="Ft2:EntireDesign" Part="xc7a35tcsg324-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." State="current" Dir="$PRUNDIR/impl_2" SynthRun="synth_2" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2016"/>
         <Step Id="init_design"/>

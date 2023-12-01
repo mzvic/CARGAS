@@ -45,82 +45,21 @@ proc step_failed { step } {
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 
-start_step init_design
+start_step write_bitstream
 set rc [catch {
-  create_msg_db init_design.pb
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
+  create_msg_db write_bitstream.pb
+  open_checkpoint ts_pt100_wrapper_routed.dcp
   set_property webtalk.parent_dir /home/mzvic/CARGAS/PT100/tempsensordriver/tempsensordriver.cache/wt [current_project]
-  set_property parent.project_path /home/mzvic/CARGAS/PT100/tempsensordriver/tempsensordriver.xpr [current_project]
-  set_property ip_repo_paths /home/mzvic/CARGAS/PT100/tempsensordriver/tempsensordriver.cache/ip [current_project]
-  set_property ip_output_repo /home/mzvic/CARGAS/PT100/tempsensordriver/tempsensordriver.cache/ip [current_project]
-  set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet /home/mzvic/CARGAS/PT100/tempsensordriver/tempsensordriver.runs/synth_1/ts_pt100_wrapper.dcp
-  read_xdc -prop_thru_buffers -ref ts_pt100_clk_wiz_0_0 -cells inst /home/mzvic/CARGAS/PT100/tempsensordriver/tempsensordriver.srcs/sources_1/bd/ts_pt100/ip/ts_pt100_clk_wiz_0_0/ts_pt100_clk_wiz_0_0_board.xdc
-  set_property processing_order EARLY [get_files /home/mzvic/CARGAS/PT100/tempsensordriver/tempsensordriver.srcs/sources_1/bd/ts_pt100/ip/ts_pt100_clk_wiz_0_0/ts_pt100_clk_wiz_0_0_board.xdc]
-  read_xdc -ref ts_pt100_clk_wiz_0_0 -cells inst /home/mzvic/CARGAS/PT100/tempsensordriver/tempsensordriver.srcs/sources_1/bd/ts_pt100/ip/ts_pt100_clk_wiz_0_0/ts_pt100_clk_wiz_0_0.xdc
-  set_property processing_order EARLY [get_files /home/mzvic/CARGAS/PT100/tempsensordriver/tempsensordriver.srcs/sources_1/bd/ts_pt100/ip/ts_pt100_clk_wiz_0_0/ts_pt100_clk_wiz_0_0.xdc]
-  read_xdc /home/mzvic/CARGAS/PT100/tempsensordriver/tempsensordriver.srcs/constrs_1/imports/digilent-xdc-master/Arty-A7-100-Master.xdc
-  link_design -top ts_pt100_wrapper -part xc7a100tcsg324-1
-  write_hwdef -file ts_pt100_wrapper.hwdef
-  close_msg_db -file init_design.pb
+  catch { write_mem_info -force ts_pt100_wrapper.mmi }
+  write_bitstream -force ts_pt100_wrapper.bit 
+  catch { write_sysdef -hwdef ts_pt100_wrapper.hwdef -bitfile ts_pt100_wrapper.bit -meminfo ts_pt100_wrapper.mmi -file ts_pt100_wrapper.sysdef }
+  catch {write_debug_probes -quiet -force debug_nets}
+  close_msg_db -file write_bitstream.pb
 } RESULT]
 if {$rc} {
-  step_failed init_design
+  step_failed write_bitstream
   return -code error $RESULT
 } else {
-  end_step init_design
-}
-
-start_step opt_design
-set rc [catch {
-  create_msg_db opt_design.pb
-  opt_design 
-  write_checkpoint -force ts_pt100_wrapper_opt.dcp
-  report_drc -file ts_pt100_wrapper_drc_opted.rpt
-  close_msg_db -file opt_design.pb
-} RESULT]
-if {$rc} {
-  step_failed opt_design
-  return -code error $RESULT
-} else {
-  end_step opt_design
-}
-
-start_step place_design
-set rc [catch {
-  create_msg_db place_design.pb
-  implement_debug_core 
-  place_design 
-  write_checkpoint -force ts_pt100_wrapper_placed.dcp
-  report_io -file ts_pt100_wrapper_io_placed.rpt
-  report_utilization -file ts_pt100_wrapper_utilization_placed.rpt -pb ts_pt100_wrapper_utilization_placed.pb
-  report_control_sets -verbose -file ts_pt100_wrapper_control_sets_placed.rpt
-  close_msg_db -file place_design.pb
-} RESULT]
-if {$rc} {
-  step_failed place_design
-  return -code error $RESULT
-} else {
-  end_step place_design
-}
-
-start_step route_design
-set rc [catch {
-  create_msg_db route_design.pb
-  route_design 
-  write_checkpoint -force ts_pt100_wrapper_routed.dcp
-  report_drc -file ts_pt100_wrapper_drc_routed.rpt -pb ts_pt100_wrapper_drc_routed.pb
-  report_timing_summary -warn_on_violation -max_paths 10 -file ts_pt100_wrapper_timing_summary_routed.rpt -rpx ts_pt100_wrapper_timing_summary_routed.rpx
-  report_power -file ts_pt100_wrapper_power_routed.rpt -pb ts_pt100_wrapper_power_summary_routed.pb -rpx ts_pt100_wrapper_power_routed.rpx
-  report_route_status -file ts_pt100_wrapper_route_status.rpt -pb ts_pt100_wrapper_route_status.pb
-  report_clock_utilization -file ts_pt100_wrapper_clock_utilization_routed.rpt
-  close_msg_db -file route_design.pb
-} RESULT]
-if {$rc} {
-  step_failed route_design
-  return -code error $RESULT
-} else {
-  end_step route_design
+  end_step write_bitstream
 }
 

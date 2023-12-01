@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1700880611">
-  <File Type="VDS-TIMING-PB" Name="ts_pt100_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="ts_pt100_wrapper_timing_summary_synth.rpt"/>
+  <File Type="PA-TCL" Name="ts_pt100_wrapper.tcl"/>
   <File Type="RDS-DCP" Name="ts_pt100_wrapper.dcp"/>
   <File Type="RDS-UTIL-PB" Name="ts_pt100_wrapper_utilization_synth.pb"/>
   <File Type="RDS-UTIL" Name="ts_pt100_wrapper_utilization_synth.rpt"/>
   <File Type="RDS-PROPCONSTRS" Name="ts_pt100_wrapper_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="ts_pt100_wrapper.vds"/>
-  <File Type="PA-TCL" Name="ts_pt100_wrapper.tcl"/>
+  <File Type="VDS-TIMING-PB" Name="ts_pt100_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/pt100/qtwosComp.v">
