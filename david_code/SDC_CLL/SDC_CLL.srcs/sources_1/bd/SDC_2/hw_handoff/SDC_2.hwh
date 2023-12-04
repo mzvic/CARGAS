@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Jul 29 02:11:01 2017" VIVADOVERSION="2016.1">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35ti" NAME="SDC_2" PACKAGE="csg324" SPEEDGRADE="-1L"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AD1_driver_v_0" PORT="clk"/>
+        <CONNECTION INSTANCE="probe_sync_sin_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="JA_1" SIGIS="undef" SIGNAME="External_Ports_JA_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AD1_driver_v_0" PORT="D0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="JA_2" SIGIS="undef" SIGNAME="External_Ports_JA_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AD1_driver_v_0" PORT="D1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="JA_0" SIGIS="undef" SIGNAME="AD1_driver_v_0_CS">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AD1_driver_v_0" PORT="CS"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="JA_3" SIGIS="undef" SIGNAME="AD1_driver_v_0_SCLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AD1_driver_v_0" PORT="SCLK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="JB_1" SIGIS="undef" SIGNAME="probe_sync_sin_0_out_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="probe_sync_sin_0" PORT="out_1"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/AD1_driver_v_0" HWVERSION="1.0" INSTANCE="AD1_driver_v_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AD1_driver_v" VLNV="xilinx.com:module_ref:AD1_driver_v:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="SDC_2_AD1_driver_v_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ready" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="11" NAME="data0" RIGHT="0" SIGIS="undef" SIGNAME="AD1_driver_v_0_data0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="probe_sync_sin_0" PORT="in_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="data1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D0" SIGIS="undef" SIGNAME="External_Ports_JA_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="JA_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D1" SIGIS="undef" SIGNAME="External_Ports_JA_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="JA_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CS" SIGIS="undef" SIGNAME="AD1_driver_v_0_CS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="JA_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SCLK" SIGIS="undef" SIGNAME="AD1_driver_v_0_SCLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="JA_3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/probe_sync_sin_0" HWVERSION="1.0" INSTANCE="probe_sync_sin_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="probe_sync_sin" VLNV="xilinx.com:module_ref:probe_sync_sin:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="SDC_2_probe_sync_sin_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="in_1" RIGHT="0" SIGIS="undef" SIGNAME="AD1_driver_v_0_data0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AD1_driver_v_0" PORT="data0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="out_1" SIGIS="undef" SIGNAME="probe_sync_sin_0_out_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="JB_1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

@@ -1,0 +1,451 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
+| Date             : Tue Nov 29 11:45:22 2022
+| Host             : DESKTOP-0L13E69 running 64-bit major release  (build 9200)
+| Command          : report_power -file SDC_CLL_wrapper_power_routed.rpt -pb SDC_CLL_wrapper_power_summary_routed.pb -rpx SDC_CLL_wrapper_power_routed.rpx
+| Design           : SDC_CLL_wrapper
+| Device           : xc7a35ticsg324-1L
+| Design State     : routed
+| Grade            : industrial
+| Process          : typical
+| Characterization : Advance
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+-------+
+| Total On-Chip Power (W)  | 0.212 |
+| Dynamic (W)              | 0.150 |
+| Device Static (W)        | 0.062 |
+| Effective TJA (C/W)      | 4.8   |
+| Max Ambient (C)          | 99.0  |
+| Junction Temperature (C) | 26.0  |
+| Confidence Level         | Low   |
+| Setting File             | ---   |
+| Simulation Activity File | ---   |
+| Design Nets Matched      | NA    |
++--------------------------+-------+
+
+
+1.1 On-Chip Components
+----------------------
+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |     0.006 |       14 |       --- |             --- |
+| Slice Logic             |     0.012 |    31943 |       --- |             --- |
+|   LUT as Logic          |     0.010 |    18353 |     20800 |           88.24 |
+|   CARRY4                |     0.001 |     3563 |      8150 |           43.72 |
+|   Register              |    <0.001 |     5727 |     41600 |           13.77 |
+|   F7/F8 Muxes           |    <0.001 |       62 |     32600 |            0.19 |
+|   LUT as Shift Register |    <0.001 |        1 |      9600 |            0.01 |
+|   Others                |     0.000 |      607 |       --- |             --- |
+| Signals                 |     0.012 |    28855 |       --- |             --- |
+| MMCM                    |     0.106 |        1 |         5 |           20.00 |
+| DSPs                    |     0.007 |       90 |        90 |          100.00 |
+| I/O                     |     0.006 |       30 |       210 |           14.29 |
+| Static Power            |     0.062 |          |           |                 |
+| Total                   |     0.212 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       0.950 |     0.046 |       0.040 |      0.006 |
+| Vccaux    |       1.800 |     0.070 |       0.059 |      0.011 |
+| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       0.950 |     0.000 |       0.000 |      0.000 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.018 |       0.000 |      0.018 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | Medium     | Device models are not Production                       | Device models may change and in turn slightly affect accuracy                                              |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 4.8                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++--------------------------------+-------------------------------------------------------+-----------------+
+| Clock                          | Domain                                                | Constraint (ns) |
++--------------------------------+-------------------------------------------------------+-----------------+
+| clk                            | clk                                                   |            10.0 |
+| clk_out1_SDC_CLL_clk_wiz_0_0   | SDC_CLL_i/clk_wiz_0/inst/clk_out1_SDC_CLL_clk_wiz_0_0 |            16.7 |
+| clk_out1_SDC_CLL_clk_wiz_0_0_1 | SDC_CLL_i/clk_wiz_0/inst/clk_out1_SDC_CLL_clk_wiz_0_0 |            16.7 |
+| clk_out2_SDC_CLL_clk_wiz_0_0   | SDC_CLL_i/clk_wiz_0/inst/clk_out2_SDC_CLL_clk_wiz_0_0 |            16.7 |
+| clk_out2_SDC_CLL_clk_wiz_0_0_1 | SDC_CLL_i/clk_wiz_0/inst/clk_out2_SDC_CLL_clk_wiz_0_0 |            16.7 |
+| clk_out3_SDC_CLL_clk_wiz_0_0   | SDC_CLL_i/clk_wiz_0/inst/clk_out3_SDC_CLL_clk_wiz_0_0 |            16.7 |
+| clk_out3_SDC_CLL_clk_wiz_0_0_1 | SDC_CLL_i/clk_wiz_0/inst/clk_out3_SDC_CLL_clk_wiz_0_0 |            16.7 |
+| clk_out4_SDC_CLL_clk_wiz_0_0   | SDC_CLL_i/clk_wiz_0/inst/clk_out4_SDC_CLL_clk_wiz_0_0 |           100.0 |
+| clk_out4_SDC_CLL_clk_wiz_0_0_1 | SDC_CLL_i/clk_wiz_0/inst/clk_out4_SDC_CLL_clk_wiz_0_0 |           100.0 |
+| clkfbout_SDC_CLL_clk_wiz_0_0   | SDC_CLL_i/clk_wiz_0/inst/clkfbout_SDC_CLL_clk_wiz_0_0 |            50.0 |
+| clkfbout_SDC_CLL_clk_wiz_0_0_1 | SDC_CLL_i/clk_wiz_0/inst/clkfbout_SDC_CLL_clk_wiz_0_0 |            50.0 |
+| sys_clk_pin                    | clk                                                   |            10.0 |
++--------------------------------+-------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-------------------------+-----------+
+| Name                    | Power (W) |
++-------------------------+-----------+
+| SDC_CLL_wrapper         |     0.150 |
+|   SDC_CLL_i             |     0.144 |
+|     AD1_driver_v_0      |    <0.001 |
+|       inst              |    <0.001 |
+|         AD1             |    <0.001 |
+|     AD1_driver_v_1      |    <0.001 |
+|       inst              |    <0.001 |
+|         AD1             |    <0.001 |
+|     AD1_driver_v_2      |    <0.001 |
+|       inst              |    <0.001 |
+|         AD1             |    <0.001 |
+|     AD1_driver_v_3      |    <0.001 |
+|       inst              |    <0.001 |
+|         AD1             |    <0.001 |
+|     AD1_driver_v_4      |    <0.001 |
+|       inst              |    <0.001 |
+|         AD1             |    <0.001 |
+|     PWM_0               |    <0.001 |
+|       inst              |    <0.001 |
+|         inst_pwm        |    <0.001 |
+|           clk_start     |    <0.001 |
+|     alarm_HT_v_0        |     0.018 |
+|       inst              |     0.018 |
+|         alarm           |     0.018 |
+|           filt1_1       |     0.007 |
+|             multa1      |    <0.001 |
+|               comp_b    |    <0.001 |
+|               comp_r    |    <0.001 |
+|             multa2      |    <0.001 |
+|               comp_b    |    <0.001 |
+|               comp_r    |    <0.001 |
+|             multa3      |    <0.001 |
+|               comp_b    |    <0.001 |
+|               comp_r    |    <0.001 |
+|             multa4      |    <0.001 |
+|               comp_b    |    <0.001 |
+|               comp_r    |    <0.001 |
+|             multa5      |    <0.001 |
+|               comp_b    |    <0.001 |
+|               comp_r    |    <0.001 |
+|             multb0      |    <0.001 |
+|               comp_b    |    <0.001 |
+|               comp_r    |    <0.001 |
+|             multb1      |    <0.001 |
+|               comp_b    |    <0.001 |
+|               comp_r    |    <0.001 |
+|             multb2      |    <0.001 |
+|               comp_b    |    <0.001 |
+|               comp_r    |    <0.001 |
+|             multb3      |    <0.001 |
+|               comp_b    |    <0.001 |
+|               comp_r    |    <0.001 |
+|             multb4      |    <0.001 |
+|               comp_b    |    <0.001 |
+|               comp_r    |    <0.001 |
+|             multb5      |    <0.001 |
+|               comp_b    |    <0.001 |
+|               comp_r    |    <0.001 |
+|             sum_ab      |    <0.001 |
+|             suma        |    <0.001 |
+|             suma1       |    <0.001 |
+|             suma2       |    <0.001 |
+|             suma3       |    <0.001 |
+|             sumb        |    <0.001 |
+|             sumb0       |    <0.001 |
+|             sumb1       |    <0.001 |
+|             sumb2       |    <0.001 |
+|             sumb3       |    <0.001 |
+|           y1_1          |     0.001 |
+|             div1        |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             div2        |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             div_Vg      |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             mult1       |    <0.001 |
+|               comp_r    |    <0.001 |
+|             mult2       |    <0.001 |
+|               comp_r    |    <0.001 |
+|             sum1        |    <0.001 |
+|           y1_2          |     0.001 |
+|             div1        |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             div2        |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             div_Vg      |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             mult1       |    <0.001 |
+|               comp_r    |    <0.001 |
+|             mult2       |    <0.001 |
+|               comp_r    |    <0.001 |
+|             sum1        |    <0.001 |
+|           y1_3          |     0.001 |
+|             div1        |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             div2        |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             div_Vg      |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             mult1       |    <0.001 |
+|               comp_r    |    <0.001 |
+|             mult2       |    <0.001 |
+|               comp_r    |    <0.001 |
+|             sum1        |    <0.001 |
+|           y2_2          |     0.001 |
+|             div1        |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             div2        |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             div_Vg      |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             mult1       |    <0.001 |
+|               comp_r    |    <0.001 |
+|             mult2       |    <0.001 |
+|               comp_r    |    <0.001 |
+|             sum1        |    <0.001 |
+|           y2_3          |     0.001 |
+|             div1        |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             div2        |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             div_Vg      |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             mult1       |    <0.001 |
+|               comp_r    |    <0.001 |
+|             mult2       |    <0.001 |
+|               comp_r    |    <0.001 |
+|             sum1        |    <0.001 |
+|           y3_1          |     0.001 |
+|             div1        |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             div2        |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             div_Vg      |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             mult1       |    <0.001 |
+|               comp_r    |    <0.001 |
+|             mult2       |    <0.001 |
+|               comp_r    |    <0.001 |
+|             sum1        |    <0.001 |
+|           y3_2          |     0.001 |
+|             div1        |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             div2        |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             div_Vg      |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             mult1       |    <0.001 |
+|               comp_r    |    <0.001 |
+|             mult2       |    <0.001 |
+|               comp_r    |    <0.001 |
+|             sum1        |    <0.001 |
+|           y3_3          |     0.001 |
+|             div1        |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             div2        |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             div_Vg      |    <0.001 |
+|               start_clk |    <0.001 |
+|               uut       |    <0.001 |
+|             mult1       |    <0.001 |
+|               comp_r    |    <0.001 |
+|             mult2       |    <0.001 |
+|               comp_r    |    <0.001 |
+|             sum1        |    <0.001 |
+|     clk_box_0           |    <0.001 |
+|       inst              |    <0.001 |
+|         clk_divClk1     |    <0.001 |
+|         clk_divClk2     |    <0.001 |
+|         clk_divClk3     |    <0.001 |
+|     clk_wiz_0           |     0.107 |
+|       inst              |     0.107 |
+|     fixedPoint_0        |     0.000 |
+|     package_ext_0       |     0.002 |
+|       inst              |     0.002 |
+|         pack1_ext       |     0.002 |
+|           RX0           |    <0.001 |
+|             baudgen0    |    <0.001 |
+|             baudgen1    |    <0.001 |
+|           TX0           |    <0.001 |
+|             dut0        |    <0.001 |
+|     pre_process_0       |    <0.001 |
+|       inst              |    <0.001 |
+|         mean1           |    <0.001 |
+|           div1          |    <0.001 |
+|             start_clk   |    <0.001 |
+|             uut         |    <0.001 |
+|           sum0          |    <0.001 |
+|           sum1          |    <0.001 |
+|     process_v_0         |     0.014 |
+|       inst              |     0.013 |
+|         clk_ctrl        |    <0.001 |
+|         clk_gen         |    <0.001 |
+|         div0            |     0.001 |
+|           start_clk     |    <0.001 |
+|           uut           |    <0.001 |
+|         lineal_1        |     0.008 |
+|           mult0         |    <0.001 |
+|             comp_a      |    <0.001 |
+|             comp_r      |    <0.001 |
+|           mult1         |     0.002 |
+|             comp_a      |    <0.001 |
+|             comp_b      |    <0.001 |
+|           mult2         |    <0.001 |
+|             comp_b      |    <0.001 |
+|             comp_r      |    <0.001 |
+|           mult3         |     0.001 |
+|           mult4         |    <0.001 |
+|             comp_b      |    <0.001 |
+|             comp_r      |    <0.001 |
+|           mult5         |    <0.001 |
+|             comp_b      |    <0.001 |
+|             comp_r      |    <0.001 |
+|           mult7         |    <0.001 |
+|             comp_b      |    <0.001 |
+|             comp_r      |    <0.001 |
+|           mult9         |     0.001 |
+|             comp_b      |    <0.001 |
+|             comp_r      |    <0.001 |
+|           sum1          |    <0.001 |
+|           sum2          |    <0.001 |
+|           sum3          |    <0.001 |
+|           sum4          |    <0.001 |
+|         out_ctrl        |    <0.001 |
+|           mult1         |    <0.001 |
+|             comp_a      |    <0.001 |
+|             comp_r      |    <0.001 |
+|         pid2            |     0.004 |
+|           div0          |    <0.001 |
+|             start_clk   |    <0.001 |
+|             uut         |    <0.001 |
+|           div1          |    <0.001 |
+|             start_clk   |    <0.001 |
+|             uut         |    <0.001 |
+|           mult0         |    <0.001 |
+|             comp_a      |    <0.001 |
+|             comp_r      |    <0.001 |
+|           mult1         |    <0.001 |
+|             comp_a      |     0.000 |
+|             comp_r      |    <0.001 |
+|           mult2         |    <0.001 |
+|             comp_a      |    <0.001 |
+|             comp_r      |    <0.001 |
+|           mult3         |    <0.001 |
+|             comp_a      |    <0.001 |
+|             comp_b      |    <0.001 |
+|             comp_r      |    <0.001 |
+|           mult4         |    <0.001 |
+|             comp_a      |    <0.001 |
+|             comp_b      |    <0.001 |
+|             comp_r      |    <0.001 |
+|           mult5         |    <0.001 |
+|             comp_a      |    <0.001 |
+|             comp_b      |    <0.001 |
+|             comp_r      |    <0.001 |
+|           mult6         |    <0.001 |
+|             comp_a      |    <0.001 |
+|             comp_b      |    <0.001 |
+|             comp_r      |    <0.001 |
+|           mult7         |    <0.001 |
+|             comp_a      |    <0.001 |
+|             comp_b      |    <0.001 |
+|             comp_r      |    <0.001 |
+|           sum0          |    <0.001 |
+|           sum1          |    <0.001 |
+|           sum2          |    <0.001 |
+|           sum3          |    <0.001 |
+|           sum4          |    <0.001 |
+|           sum5          |    <0.001 |
+|           sum6          |    <0.001 |
+|         sum0            |    <0.001 |
++-------------------------+-----------+
+
+

@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SPIX4
+Size               128M
+Start Address      0x00000000
+End Address        0x07FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0021728B    Sep 14 17:28:37 2022    C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.runs/impl_1/SDC_CLL_wrapper.bit

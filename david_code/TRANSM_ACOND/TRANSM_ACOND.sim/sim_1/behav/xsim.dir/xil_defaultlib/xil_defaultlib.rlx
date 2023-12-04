@@ -1,0 +1,9 @@
+0.2
+2016.1
+C:/Users/David/Desktop/Radiometro/SDC_CLL/SDC_CLL.srcs/sources_1/imports/Radiometro/UART/UART.srcs/sources_1/new/divisor_f.sv,1521136805,verilog,,,,../../../../SDC_CLL/SDC_CLL.srcs/sources_1/imports/new,,,,,
+C:/Users/David/Desktop/Radiometro/SDC_CLL/SDC_CLL.srcs/sources_1/imports/Radiometro/UART/UART.srcs/sources_1/new/uart_tx.sv,1530046404,verilog,,,,../../../../SDC_CLL/SDC_CLL.srcs/sources_1/imports/new,,,,,
+C:/Users/David/Desktop/Radiometro/TRANSM_ACOND/TRANSM_ACOND.sim/sim_1/behav/glbl.v,1460148552,verilog,,,,,,,,,
+C:/Users/David/Desktop/Radiometro/TRANSM_ACOND/TRANSM_ACOND.srcs/sim_1/new/tb_transm_SDEC.sv,1530208577,verilog,,,,../../../../SDC_CLL/SDC_CLL.srcs/sources_1/imports/new,,,,,
+C:/Users/David/Desktop/Radiometro/TRANSM_ACOND/TRANSM_ACOND.srcs/sources_1/new/AD1_drive.sv,1530120562,verilog,,,,../../../../SDC_CLL/SDC_CLL.srcs/sources_1/imports/new,,,,,
+C:/Users/David/Desktop/Radiometro/TRANSM_ACOND/TRANSM_ACOND.srcs/sources_1/new/serial_gen_AD.sv,1530123940,verilog,,,,../../../../SDC_CLL/SDC_CLL.srcs/sources_1/imports/new,,,,,
+C:/Users/David/Desktop/Radiometro/TRANSM_ACOND/TRANSM_ACOND.srcs/sources_1/new/signal_gen.sv,1530040897,verilog,,,,../../../../SDC_CLL/SDC_CLL.srcs/sources_1/imports/new,,,,,

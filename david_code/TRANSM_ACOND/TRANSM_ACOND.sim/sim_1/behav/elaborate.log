@@ -1,0 +1,18 @@
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto a83484e03625464c92049bc649f3b7d9 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_transm_SDEC_behav xil_defaultlib.tb_transm_SDEC xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port en_clk [C:/Users/David/Desktop/Radiometro/TRANSM_ACOND/TRANSM_ACOND.srcs/sim_1/new/tb_transm_SDEC.sv:65]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.divisor_f(div=12)
+Compiling module xil_defaultlib.serial_gen_AD
+Compiling module xil_defaultlib.AD1_drive
+Compiling module xil_defaultlib.signal_gen(BAUD=17,SEND_RATE=408...
+Compiling module xil_defaultlib.uart_tx(BAUD=17,SENDRATE=408)
+Compiling module xil_defaultlib.tb_transm_SDEC
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_transm_SDEC_behav

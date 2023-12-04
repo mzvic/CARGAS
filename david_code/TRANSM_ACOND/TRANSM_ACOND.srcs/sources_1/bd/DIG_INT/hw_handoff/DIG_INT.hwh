@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue May 29 15:40:55 2018" VIVADOVERSION="2016.1">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35ti" NAME="DIG_INT" PACKAGE="csg324" SPEEDGRADE="-1L"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="JA_1" SIGIS="undef" SIGNAME="External_Ports_JA_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AD1_driver_v_0" PORT="D0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="JA_2" SIGIS="undef" SIGNAME="External_Ports_JA_2">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AD1_driver_v_0" PORT="D1"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="package_0" PORT="clk"/>
+        <CONNECTION INSTANCE="package_0" PORT="clk_2"/>
+        <CONNECTION INSTANCE="AD1_driver_v_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="JA_0" SIGIS="undef" SIGNAME="AD1_driver_v_0_CS">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AD1_driver_v_0" PORT="CS"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="JA_3" SIGIS="undef" SIGNAME="AD1_driver_v_0_SCLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AD1_driver_v_0" PORT="SCLK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="uart_txd_out" SIGIS="undef" SIGNAME="package_0_tx">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="package_0" PORT="tx"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="uart_rxd_in" SIGIS="undef" SIGNAME="External_Ports_uart_rxd_in">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="package_0" PORT="rx"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/AD1_driver_v_0" HWVERSION="1.0" INSTANCE="AD1_driver_v_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AD1_driver_v" VLNV="xilinx.com:module_ref:AD1_driver_v:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="DIG_INT_AD1_driver_v_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ready" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="11" NAME="data0" RIGHT="0" SIGIS="undef" SIGNAME="AD1_driver_v_0_data0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="package_0" PORT="PV1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="data1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" NAME="D0" SIGIS="undef" SIGNAME="External_Ports_JA_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="JA_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="D1" SIGIS="undef" SIGNAME="External_Ports_JA_2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="JA_2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CS" SIGIS="undef" SIGNAME="AD1_driver_v_0_CS">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="JA_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="SCLK" SIGIS="undef" SIGNAME="AD1_driver_v_0_SCLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="JA_3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/package_0" HWVERSION="1.0" INSTANCE="package_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="package" VLNV="xilinx.com:module_ref:package:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="BAUD" VALUE="10416"/>
+        <PARAMETER NAME="SEND_RATE" VALUE="250000"/>
+        <PARAMETER NAME="Component_Name" VALUE="DIG_INT_package_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk_2" SIGIS="undef" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rx" SIGIS="undef" SIGNAME="External_Ports_uart_rxd_in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="uart_rxd_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="PV1" RIGHT="0" SIGIS="undef" SIGNAME="AD1_driver_v_0_data0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AD1_driver_v_0" PORT="data0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="PV2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="11" NAME="PV3" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="15" NAME="CV" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="tx" SIGIS="undef" SIGNAME="package_0_tx">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="uart_txd_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="SP" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="2" NAME="MODO" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="15" NAME="param1" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="15" NAME="param2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="15" NAME="param3" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

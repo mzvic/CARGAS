@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Thu Aug 24 17:26:41 2023
+# Process ID: 5152
+# Current directory: C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15180 C:\Users\David\Desktop\Hardware\Cargas\02_09_22\SDC_CLL\SDC_CLL.xpr
+# Log file: C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/vivado.log
+# Journal file: C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/imports/Radiometro/UART/UART.srcs/sources_1/new/divisor_f.sv'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.1/data/ip'.
+open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:27 . Memory (MB): peak = 771.418 ; gain = 142.910
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/SDC_CLL.bd}
+Adding cell -- xilinx.com:ip:clk_wiz:5.3 - clk_wiz_0
+Adding cell -- xilinx.com:module_ref:AD1_driver_v:1.0 - AD1_driver_v_0
+Adding cell -- xilinx.com:module_ref:AD1_driver_v:1.0 - AD1_driver_v_2
+Adding cell -- xilinx.com:module_ref:fixedPoint:1.0 - fixedPoint_0
+Adding cell -- xilinx.com:module_ref:AD1_driver_v:1.0 - AD1_driver_v_1
+Adding cell -- xilinx.com:module_ref:AD1_driver_v:1.0 - AD1_driver_v_3
+Adding cell -- xilinx.com:module_ref:PWM:1.0 - PWM_0
+Adding cell -- xilinx.com:module_ref:process_v:1.0 - process_v_0
+Adding cell -- xilinx.com:module_ref:clk_box:1.0 - clk_box_0
+Adding cell -- xilinx.com:module_ref:package_ext:1.0 - package_ext_0
+Adding cell -- xilinx.com:module_ref:pre_process:1.0 - pre_process_0
+Adding cell -- xilinx.com:module_ref:AD1_driver_v:1.0 - AD1_driver_v_4
+Adding cell -- xilinx.com:module_ref:alarm_HT_v:1.0 - alarm_HT_v_0
+Successfully read diagram <SDC_CLL> from BD file <C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/SDC_CLL.bd>
+open_bd_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 838.188 ; gain = 66.355
+INFO: [xilinx.com:ip:clk_wiz:5.3-1] SDC_CLL_clk_wiz_0_0: divN_0 17 phase_0 0.000 dutyCycle_0 0.500 
+INFO: [xilinx.com:ip:clk_wiz:5.3-9] SDC_CLL_clk_wiz_0_0: value_5 0x00c0
+INFO: [xilinx.com:ip:clk_wiz:5.3-111] SDC_CLL_clk_wiz_0_0: value_0 1209 0080 0080
+INFO: [xilinx.com:ip:clk_wiz:5.3-222] SDC_CLL_clk_wiz_0_0: value_0 0x0080
+INFO: [xilinx.com:ip:clk_wiz:5.3-333] SDC_CLL_clk_wiz_0_0: value 00c0
+INFO: [xilinx.com:ip:clk_wiz:5.3-1] SDC_CLL_clk_wiz_0_0: divN_0 17 phase_0 0.000 dutyCycle_0 0.500 
+INFO: [xilinx.com:ip:clk_wiz:5.3-9] SDC_CLL_clk_wiz_0_0: value_5 0x00c0
+INFO: [xilinx.com:ip:clk_wiz:5.3-111] SDC_CLL_clk_wiz_0_0: value_0 1209 0080 0080
+INFO: [xilinx.com:ip:clk_wiz:5.3-222] SDC_CLL_clk_wiz_0_0: value_0 0x0080
+INFO: [xilinx.com:ip:clk_wiz:5.3-333] SDC_CLL_clk_wiz_0_0: value 00c0
+INFO: [xilinx.com:ip:clk_wiz:5.3-1] SDC_CLL_clk_wiz_0_0: divN_0 17 phase_0 0.000 dutyCycle_0 0.500 
+INFO: [xilinx.com:ip:clk_wiz:5.3-9] SDC_CLL_clk_wiz_0_0: value_5 0x00c0
+INFO: [xilinx.com:ip:clk_wiz:5.3-111] SDC_CLL_clk_wiz_0_0: value_0 1209 0080 0080
+INFO: [xilinx.com:ip:clk_wiz:5.3-222] SDC_CLL_clk_wiz_0_0: value_0 0x0080
+INFO: [xilinx.com:ip:clk_wiz:5.3-333] SDC_CLL_clk_wiz_0_0: value 00c0
+INFO: [xilinx.com:ip:clk_wiz:5.3-1] SDC_CLL_clk_wiz_0_0: divN_0 17 phase_0 0.000 dutyCycle_0 0.500 
+INFO: [xilinx.com:ip:clk_wiz:5.3-9] SDC_CLL_clk_wiz_0_0: value_5 0x00c0
+INFO: [xilinx.com:ip:clk_wiz:5.3-111] SDC_CLL_clk_wiz_0_0: value_0 1209 0080 0080
+INFO: [xilinx.com:ip:clk_wiz:5.3-222] SDC_CLL_clk_wiz_0_0: value_0 0x0080
+INFO: [xilinx.com:ip:clk_wiz:5.3-333] SDC_CLL_clk_wiz_0_0: value 00c0
+INFO: [xilinx.com:ip:clk_wiz:5.3-1] SDC_CLL_clk_wiz_0_0: divN_0 11 phase_0 0.000 dutyCycle_0 0.500 
+INFO: [xilinx.com:ip:clk_wiz:5.3-9] SDC_CLL_clk_wiz_0_0: value_5 0x00c0
+INFO: [xilinx.com:ip:clk_wiz:5.3-111] SDC_CLL_clk_wiz_0_0: value_0 1146 0080 0080
+INFO: [xilinx.com:ip:clk_wiz:5.3-222] SDC_CLL_clk_wiz_0_0: value_0 0x0080
+INFO: [xilinx.com:ip:clk_wiz:5.3-333] SDC_CLL_clk_wiz_0_0: value 00c0
+INFO: [xilinx.com:ip:clk_wiz:5.3-1] SDC_CLL_clk_wiz_0_0: divN_0 13 phase_0 0.000 dutyCycle_0 0.500 
+INFO: [xilinx.com:ip:clk_wiz:5.3-9] SDC_CLL_clk_wiz_0_0: value_5 0x00c0
+INFO: [xilinx.com:ip:clk_wiz:5.3-111] SDC_CLL_clk_wiz_0_0: value_0 1187 0080 0080
+INFO: [xilinx.com:ip:clk_wiz:5.3-222] SDC_CLL_clk_wiz_0_0: value_0 0x0080
+INFO: [xilinx.com:ip:clk_wiz:5.3-333] SDC_CLL_clk_wiz_0_0: value 00c0
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 24 17:36:56 2023...

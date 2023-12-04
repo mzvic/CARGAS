@@ -1,0 +1,249 @@
+/*
+
+Vivado v2016.1 (64-bit)
+SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+Process ID: 7516
+
+Current time: 	1/4/23 6:24:18 PM BRST
+Time zone: 	Brasilia Time (America/Sao_Paulo)
+
+OS: Windows 10
+Version: 10.0
+Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 2
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	C:/Xilinx/Vivado/2016.1/tps/win64/jre
+
+User name: 	David
+User home directory: C:/Users/David
+User working directory: C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL
+User country: 	419
+User language: 	es
+User locale: 	es_419
+
+RDI Base root directory: C:/Xilinx/Vivado
+RDI Data directory: C:/Xilinx/Vivado/2016.1/data
+RDI Bin directory: C:/Xilinx/Vivado/2016.1/bin
+
+Vivado preferences path: C:/Users/David/AppData/Roaming/Xilinx/Vivado/2016.1/vivado.ini
+Vivado layouts directory: C:/Users/David/AppData/Roaming/Xilinx/Vivado/2016.1/layouts
+
+GUI allocated memory:	211 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 404 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 27 MB (+25531kb) [00:00:12]
+// [Engine Memory]: 392 MB (+259762kb) [00:00:12]
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\David\Desktop\Hardware\Cargas\02_09_22\SDC_CLL\SDC_CLL.xpr. Version: Vivado v2016.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.xpr 
+// [GUI Memory]: 34 MB (+5965kb) [00:00:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 419 MB. GUI used memory: 26 MB. Current time: 1/4/23 6:24:22 PM BRST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 434 MB (+23746kb) [00:00:22]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 37 MB (+1423kb) [00:00:33]
+// [Engine Memory]: 524 MB (+71423kb) [00:00:33]
+// [GUI Memory]: 50 MB (+11376kb) [00:00:36]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 534 MB. GUI used memory: 38 MB. Current time: 1/4/23 6:24:50 PM BRST
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Project name: SDC_CLL; location: C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL; part: xc7a35ticsg324-1L
+// [GUI Memory]: 52 MB (+116kb) [00:00:51]
+// Tcl Message: open_project: Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 800.773 ; gain = 156.832 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 55 MB (+668kb) [00:00:53]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: update_compile_order -fileset sources_1 
+// a:a (cv:JFrame): Critical Messages: addNotify
+// Elapsed time: 22 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cv:JFrame)
+// [GUI Memory]: 62 MB (+3454kb) [00:01:20]
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v)]", 3); // z:k (G:JPanel, cv:JFrame)
+// PAPropertyPanels.initPanels (SDC_CLL.bd) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd)]", 4, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd)]", 4, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd)]", 4, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+// bL:g (cv:JFrame):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/SDC_CLL.bd} 
+// Tcl Message: Adding cell -- xilinx.com:ip:clk_wiz:5.3 - clk_wiz_0 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: Adding cell -- xilinx.com:module_ref:AD1_driver_v:1.0 - AD1_driver_v_0 Adding cell -- xilinx.com:module_ref:AD1_driver_v:1.0 - AD1_driver_v_2 Adding cell -- xilinx.com:module_ref:fixedPoint:1.0 - fixedPoint_0 Adding cell -- xilinx.com:module_ref:AD1_driver_v:1.0 - AD1_driver_v_1 Adding cell -- xilinx.com:module_ref:AD1_driver_v:1.0 - AD1_driver_v_3 Adding cell -- xilinx.com:module_ref:PWM:1.0 - PWM_0 Adding cell -- xilinx.com:module_ref:process_v:1.0 - process_v_0 Adding cell -- xilinx.com:module_ref:clk_box:1.0 - clk_box_0 
+// TclEventType: LOAD_FEATURE
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: Adding cell -- xilinx.com:module_ref:package_ext:1.0 - package_ext_0 Adding cell -- xilinx.com:module_ref:pre_process:1.0 - pre_process_0 Adding cell -- xilinx.com:module_ref:AD1_driver_v:1.0 - AD1_driver_v_4 Adding cell -- xilinx.com:module_ref:alarm_HT_v:1.0 - alarm_HT_v_0 
+// [GUI Memory]: 65 MB (+318kb) [00:01:36]
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 577 MB (+27591kb) [00:01:46]
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: Successfully read diagram <SDC_CLL> from BD file <C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/SDC_CLL.bd> 
+// HMemoryUtils.trashcanNow. Engine heap size: 581 MB. GUI used memory: 38 MB. Current time: 1/4/23 6:25:51 PM BRST
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 852.945 ; gain = 42.855 
+// Elapsed time: 17 seconds
+dismissDialog("Open Block Design"); // bL:g (cv:JFrame)
+// [GUI Memory]: 71 MB (+3355kb) [00:01:53]
+// [GUI Memory]: 75 MB (+56kb) [00:02:06]
+// [Engine Memory]: 614 MB (+8324kb) [00:02:16]
+// Elapsed time: 86 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // x:Y (w:G, cv:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// HMemoryUtils.trashcanNow. Engine heap size: 630 MB. GUI used memory: 40 MB. Current time: 1/4/23 6:27:21 PM BRST
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd)]", 4); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd), SDC_CLL (SDC_CLL.v)]", 5); // z:k (G:JPanel, cv:JFrame)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd), SDC_CLL (SDC_CLL.v), PWM_0 - SDC_CLL_PWM_0_0 (Module Reference Wrapper)]", 11, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd), SDC_CLL (SDC_CLL.v), alarm_HT_v_0 - SDC_CLL_alarm_HT_v_0_0 (Module Reference Wrapper)]", 12, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd), SDC_CLL (SDC_CLL.v), fixedPoint_0 - SDC_CLL_fixedPoint_0_0 (Module Reference Wrapper)]", 15, false); // z:k (G:JPanel, cv:JFrame)
+// Elapsed time: 67 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd), SDC_CLL (SDC_CLL.v), clk_wiz_0 - SDC_CLL_clk_wiz_0_0 (SDC_CLL_clk_wiz_0_0.xci)]", 14, false); // z:k (G:JPanel, cv:JFrame)
+// [GUI Memory]: 80 MB (+812kb) [00:04:47]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd), SDC_CLL (SDC_CLL.v), pre_process_0 - SDC_CLL_pre_process_0_0 (Module Reference Wrapper)]", 17, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd), SDC_CLL (SDC_CLL.v), package_ext_0 - SDC_CLL_package_ext_0_1 (Module Reference Wrapper)]", 16, false); // z:k (G:JPanel, cv:JFrame)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd), SDC_CLL (SDC_CLL.v), pre_process_0 - SDC_CLL_pre_process_0_0 (Module Reference Wrapper)]", 17, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd), SDC_CLL (SDC_CLL.v), clk_wiz_0 - SDC_CLL_clk_wiz_0_0 (SDC_CLL_clk_wiz_0_0.xci)]", 14, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd), SDC_CLL (SDC_CLL.v), fixedPoint_0 - SDC_CLL_fixedPoint_0_0 (Module Reference Wrapper)]", 15, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd), SDC_CLL (SDC_CLL.v), AD1_driver_v_1 - SDC_CLL_AD1_driver_v_1_0 (Module Reference Wrapper)]", 7, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd), SDC_CLL (SDC_CLL.v), AD1_driver_v_3 - SDC_CLL_AD1_driver_v_1_1 (Module Reference Wrapper)]", 9, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd), SDC_CLL (SDC_CLL.v), PWM_0 - SDC_CLL_PWM_0_0 (Module Reference Wrapper)]", 11, false); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd), SDC_CLL (SDC_CLL.v), PWM_0 - SDC_CLL_PWM_0_0 (Module Reference Wrapper)]", 11); // z:k (G:JPanel, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 60 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd), SDC_CLL (SDC_CLL.v), PWM_0 - SDC_CLL_PWM_0_0 (Module Reference Wrapper), SDC_CLL_PWM_0_0 (SDC_CLL_PWM_0_0.v)]", 12); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd), SDC_CLL (SDC_CLL.v), PWM_0 - SDC_CLL_PWM_0_0 (Module Reference Wrapper), SDC_CLL_PWM_0_0 (SDC_CLL_PWM_0_0.v), inst - PWM (PWM.v), inst_pwm - PWM_sv (var_duty_clk.sv)]", 14, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd), SDC_CLL (SDC_CLL.v), PWM_0 - SDC_CLL_PWM_0_0 (Module Reference Wrapper), SDC_CLL_PWM_0_0 (SDC_CLL_PWM_0_0.v), inst - PWM (PWM.v), inst_pwm - PWM_sv (var_duty_clk.sv)]", 14, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SDC_CLL_wrapper (SDC_CLL_wrapper.v), SDC_CLL_i - SDC_CLL (SDC_CLL.bd), SDC_CLL (SDC_CLL.v), PWM_0 - SDC_CLL_PWM_0_0 (Module Reference Wrapper), SDC_CLL_PWM_0_0 (SDC_CLL_PWM_0_0.v), inst - PWM (PWM.v), inst_pwm - PWM_sv (var_duty_clk.sv)]", 14, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+// Elapsed time: 47 seconds
+selectCodeEditor("var_duty_clk.sv", 171, 180); // bH:N (JPanel:JComponent, cv:JFrame)
+// [GUI Memory]: 84 MB (+148kb) [00:07:33]
+// Elapsed time: 53 seconds
+selectCodeEditor("var_duty_clk.sv", 87, 110); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("var_duty_clk.sv", 90, 110, false, false, false, false, true); // bH:N (JPanel:JComponent, cv:JFrame) - Double Click
+// Elapsed time: 41 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // y:JideButton (CommandBar:DockableBar, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 5, true); // x:Y (w:G, cv:JFrame) - Node
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 5, true); // x:Y (w:G, cv:JFrame) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IP_INTEGRATOR
+// [GUI Memory]: 90 MB (+1969kb) [00:08:59]
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 41 MB. Current time: 1/4/23 6:33:12 PM BRST
+// [Engine Memory]: 658 MB (+13796kb) [00:09:11]
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 41 MB. Current time: 1/4/23 7:03:15 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 39 MB. Current time: 1/4/23 7:33:18 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 36 MB. Current time: 1/4/23 8:03:21 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/4/23 8:33:25 PM BRST
+// [GUI Memory]: 95 MB (+548kb) [02:30:25]
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/4/23 9:03:28 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/4/23 9:33:31 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/4/23 10:03:34 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/4/23 10:33:37 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/4/23 11:03:40 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/4/23 11:33:43 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 12:03:46 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 12:33:49 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 1:03:52 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 1:33:55 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/5/23 2:03:58 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 2:34:02 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 3:04:05 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 3:34:08 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/5/23 4:04:11 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 4:34:14 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/5/23 5:04:17 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/5/23 5:34:20 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/5/23 6:04:23 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 6:34:26 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 7:04:29 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/5/23 7:34:32 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 8:04:35 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/5/23 8:34:38 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 9:04:41 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 9:34:44 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 10:04:48 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/5/23 10:34:51 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 11:04:54 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/5/23 11:34:57 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 12:05:01 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 12:35:04 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/5/23 1:05:07 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 1:35:10 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/5/23 2:05:13 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/5/23 2:35:16 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/5/23 3:05:19 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 3:35:22 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/5/23 4:05:25 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 4:35:29 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 5:05:33 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/5/23 5:35:35 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 6:05:39 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 6:35:39 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/5/23 7:05:42 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/5/23 7:35:45 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 72 MB. Current time: 1/6/23 10:15:55 AM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 40 MB. Current time: 1/6/23 12:24:59 PM BRST
+// [GUI Memory]: 100 MB (+359kb) [42:06:50]
+// [GUI Memory]: 105 MB (+400kb) [42:07:11]
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/6/23 12:54:25 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 38 MB. Current time: 1/6/23 1:24:28 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/6/23 1:54:31 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/6/23 2:24:33 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/6/23 2:54:37 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/6/23 3:24:40 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 36 MB. Current time: 1/6/23 3:54:43 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/6/23 4:24:46 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/6/23 4:54:49 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/6/23 5:24:55 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/6/23 5:54:55 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/6/23 6:24:58 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 36 MB. Current time: 1/6/23 6:55:02 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 36 MB. Current time: 1/7/23 12:15:37 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/7/23 12:45:26 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 36 MB. Current time: 1/7/23 1:15:29 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/7/23 1:45:32 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 37 MB. Current time: 1/7/23 2:15:35 PM BRST
+// HMemoryUtils.trashcanNow. Engine heap size: 658 MB. GUI used memory: 36 MB. Current time: 1/7/23 2:45:38 PM BRST

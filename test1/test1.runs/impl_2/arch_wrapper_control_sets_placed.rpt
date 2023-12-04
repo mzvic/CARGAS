@@ -1,0 +1,67 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
+| Date         : Mon Dec  4 15:00:23 2023
+| Host         : mzvic running 64-bit Ubuntu 22.04.3 LTS
+| Command      : report_control_sets -verbose -file arch_wrapper_control_sets_placed.rpt
+| Design       : arch_wrapper
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    14 |
+| Unused register locations in slices containing registers |    59 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               5 |            3 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              30 |           10 |
+| Yes          | No                    | No                     |              60 |           20 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              22 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------+----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+----------------+
+|           Clock Signal          |                                   Enable Signal                                  |                                 Set/Reset Signal                                 | Slice Load Count | Bel Load Count |
++---------------------------------+----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+----------------+
+|  arch_i/clk_wiz_0/inst/clk_out2 |                                                                                  |                                                                                  |                1 |              1 |
+|  arch_i/clk_wiz_0/inst/clk_out1 | arch_i/SDC_CLL_AD1_driver_v_0_2_0/inst/inst/AD1/CS3_out                          | arch_i/package_ext_0/inst/pack1_ext/TX0/dut0/FSM_sequential_state_send_reg[0][0] |                1 |              1 |
+|  arch_i/clk_wiz_0/inst/clk_out1 |                                                                                  |                                                                                  |                2 |              4 |
+|  arch_i/clk_wiz_0/inst/clk_out1 | arch_i/SDC_CLL_AD1_driver_v_0_2_0/inst/inst/AD1/state[4]_i_1_n_0                 | arch_i/package_ext_0/inst/pack1_ext/TX0/dut0/FSM_sequential_state_send_reg[0][0] |                1 |              5 |
+|  arch_i/clk_wiz_0/inst/clk_out2 | arch_i/package_ext_0/inst/pack1_ext/TX0/dut0/cont_reg[5]_0[0]                    | arch_i/package_ext_0/inst/pack1_ext/TX0/dut0/SR[0]                               |                2 |              6 |
+|  arch_i/clk_wiz_0/inst/clk_out2 | arch_i/package_ext_0/inst/pack1_ext/TX0/dut0/FSM_sequential_state_send_reg[0][0] |                                                                                  |                2 |              6 |
+|  arch_i/clk_wiz_0/inst/clk_out2 | arch_i/package_ext_0/inst/pack1_ext/TX0/dut0/E[0]                                |                                                                                  |                4 |              8 |
+|  arch_i/clk_wiz_0/inst/clk_out2 | arch_i/package_ext_0/inst/pack1_ext/TX0/dut0/data_shift_reg[10]                  | arch_i/package_ext_0/inst/pack1_ext/TX0/dut0/SR[0]                               |                2 |             10 |
+|  arch_i/clk_wiz_0/inst/clk_out1 | arch_i/SDC_CLL_AD1_driver_v_0_2_0/inst/inst/AD1/data0_shift_0                    |                                                                                  |                3 |             11 |
+|  arch_i/clk_wiz_0/inst/clk_out2 |                                                                                  | arch_i/package_ext_0/inst/pack1_ext/TX0/dut0/cont_B[11]_i_1_n_0                  |                4 |             12 |
+|  arch_i/clk_wiz_0/inst/clk_out2 | arch_i/package_ext_0/inst/pack1_ext/TX0/dut0/data_shift_reg[10]                  |                                                                                  |                5 |             12 |
+|  arch_i/clk_wiz_0/inst/clk_out2 | arch_i/package_ext_0/inst/pack1_ext/capt_data                                    |                                                                                  |                5 |             12 |
+|  arch_i/clk_wiz_0/inst/clk_out1 | arch_i/SDC_CLL_AD1_driver_v_0_2_0/inst/inst/AD1/data0[11]_i_1_n_0                |                                                                                  |                2 |             12 |
+|  arch_i/clk_wiz_0/inst/clk_out2 |                                                                                  | arch_i/package_ext_0/inst/pack1_ext/TX0/dut0/cont[17]_i_1_n_0                    |                6 |             18 |
++---------------------------------+----------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+----------------+
+
+

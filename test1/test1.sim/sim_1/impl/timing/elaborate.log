@@ -1,0 +1,9 @@
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.1/bin/unwrapped/lnx64.o/xelab -wto 79ff1e77c424479bb13756226d042408 --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot package_ext_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 xil_defaultlib.package_ext xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+ERROR: [XSIM 43-3349] Unsupported net type.
+ERROR: [XSIM 43-3316] Signal SIGSEGV received.

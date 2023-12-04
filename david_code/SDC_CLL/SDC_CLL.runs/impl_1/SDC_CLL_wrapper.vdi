@@ -1,0 +1,636 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue Nov 29 11:35:59 2022
+# Process ID: 4676
+# Current directory: C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.runs/impl_1
+# Command line: vivado.exe -log SDC_CLL_wrapper.vdi -applog -messageDb vivado.pb -mode batch -source SDC_CLL_wrapper.tcl -notrace
+# Log file: C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.runs/impl_1/SDC_CLL_wrapper.vdi
+# Journal file: C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source SDC_CLL_wrapper.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 3880 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/ip/SDC_CLL_clk_wiz_0_0/SDC_CLL_clk_wiz_0_0_board.xdc] for cell 'SDC_CLL_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/ip/SDC_CLL_clk_wiz_0_0/SDC_CLL_clk_wiz_0_0_board.xdc] for cell 'SDC_CLL_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/ip/SDC_CLL_clk_wiz_0_0/SDC_CLL_clk_wiz_0_0.xdc] for cell 'SDC_CLL_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/ip/SDC_CLL_clk_wiz_0_0/SDC_CLL_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/ip/SDC_CLL_clk_wiz_0_0/SDC_CLL_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:32 ; elapsed = 00:00:30 . Memory (MB): peak = 1081.750 ; gain = 514.426
+Finished Parsing XDC File [c:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/ip/SDC_CLL_clk_wiz_0_0/SDC_CLL_clk_wiz_0_0.xdc] for cell 'SDC_CLL_i/clk_wiz_0/inst'
+Parsing XDC File [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led2[2]'. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2[1]'. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led2[0]'. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led3[2]'. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led3[1]'. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led3[0]'. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_02'. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA_1'. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA_2'. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JA_3'. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB_1'. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB_2'. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB_3'. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:57 ; elapsed = 00:00:57 . Memory (MB): peak = 1081.785 ; gain = 849.563
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35ti'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.797 . Memory (MB): peak = 1081.785 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 1a265c300
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1c97b8a16
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1081.785 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 2 load pin(s).
+INFO: [Opt 31-10] Eliminated 447 cells.
+Phase 2 Constant Propagation | Checksum: 22985d78b
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1081.785 ; gain = 0.000
+
+Phase 3 Sweep
+INFO: [Opt 31-12] Eliminated 15643 unconnected nets.
+INFO: [Opt 31-11] Eliminated 2663 unconnected cells.
+Phase 3 Sweep | Checksum: 1ea16156d
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1081.785 ; gain = 0.000
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.187 . Memory (MB): peak = 1081.785 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1ea16156d
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1081.785 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 1ea16156d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.136 . Memory (MB): peak = 1081.785 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 13 Warnings, 13 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 1081.785 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.132 . Memory (MB): peak = 1081.785 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 1081.785 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.runs/impl_1/SDC_CLL_wrapper_drc_opted.rpt.
+report_drc: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1081.785 ; gain = 0.000
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35ti'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1081.785 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1081.785 ; gain = 0.000
+
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device
+
+Phase 1.1.1 Pre-Place Cells
+Phase 1.1.1 Pre-Place Cells | Checksum: b783f855
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.383 . Memory (MB): peak = 1081.785 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1.1.2 IO and Clk Clean Up
+Phase 1.1.2 IO and Clk Clean Up | Checksum: b783f855
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1082.957 ; gain = 1.172
+
+Phase 1.1.3 Implementation Feasibility check On IDelay
+Phase 1.1.3 Implementation Feasibility check On IDelay | Checksum: b783f855
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1082.957 ; gain = 1.172
+
+Phase 1.1.4 Commit IO Placement
+Phase 1.1.4 Commit IO Placement | Checksum: de548006
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1082.957 ; gain = 1.172
+Phase 1.1 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 114f6ebcc
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1082.957 ; gain = 1.172
+
+Phase 1.2 Build Placer Netlist Model
+
+Phase 1.2.1 Place Init Design
+
+Phase 1.2.1.1 Init Lut Pin Assignment
+Phase 1.2.1.1 Init Lut Pin Assignment | Checksum: 1f9cd4e06
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1108.996 ; gain = 27.211
+Phase 1.2.1 Place Init Design | Checksum: 152fded11
+
+Time (s): cpu = 00:01:04 ; elapsed = 00:00:55 . Memory (MB): peak = 1168.008 ; gain = 86.223
+Phase 1.2 Build Placer Netlist Model | Checksum: 152fded11
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:55 . Memory (MB): peak = 1168.008 ; gain = 86.223
+
+Phase 1.3 Constrain Clocks/Macros
+Phase 1.3 Constrain Clocks/Macros | Checksum: 152fded11
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:55 . Memory (MB): peak = 1168.008 ; gain = 86.223
+Phase 1 Placer Initialization | Checksum: 152fded11
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:55 . Memory (MB): peak = 1168.008 ; gain = 86.223
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: f4e78ef9
+
+Time (s): cpu = 00:02:13 ; elapsed = 00:01:42 . Memory (MB): peak = 1168.008 ; gain = 86.223
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: f4e78ef9
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:43 . Memory (MB): peak = 1168.008 ; gain = 86.223
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 19744f87d
+
+Time (s): cpu = 00:02:37 ; elapsed = 00:02:01 . Memory (MB): peak = 1168.008 ; gain = 86.223
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 12d556b77
+
+Time (s): cpu = 00:02:38 ; elapsed = 00:02:02 . Memory (MB): peak = 1168.008 ; gain = 86.223
+
+Phase 3.4 updateClock Trees: DP
+Phase 3.4 updateClock Trees: DP | Checksum: 12d556b77
+
+Time (s): cpu = 00:02:38 ; elapsed = 00:02:02 . Memory (MB): peak = 1168.008 ; gain = 86.223
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: 19334c48e
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:02:05 . Memory (MB): peak = 1168.008 ; gain = 86.223
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: 19334c48e
+
+Time (s): cpu = 00:02:44 ; elapsed = 00:02:06 . Memory (MB): peak = 1168.008 ; gain = 86.223
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 150c85a63
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:02:24 . Memory (MB): peak = 1168.008 ; gain = 86.223
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: b68fb592
+
+Time (s): cpu = 00:03:03 ; elapsed = 00:02:27 . Memory (MB): peak = 1168.008 ; gain = 86.223
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: b68fb592
+
+Time (s): cpu = 00:03:04 ; elapsed = 00:02:27 . Memory (MB): peak = 1168.008 ; gain = 86.223
+
+Phase 3.10 Fast Optimization
+Phase 3.10 Fast Optimization | Checksum: b68fb592
+
+Time (s): cpu = 00:03:13 ; elapsed = 00:02:34 . Memory (MB): peak = 1168.008 ; gain = 86.223
+Phase 3 Detail Placement | Checksum: b68fb592
+
+Time (s): cpu = 00:03:13 ; elapsed = 00:02:34 . Memory (MB): peak = 1168.008 ; gain = 86.223
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 updateClock Trees: PCOPT
+Phase 4.1.1 updateClock Trees: PCOPT | Checksum: 91537bb8
+
+Time (s): cpu = 00:03:46 ; elapsed = 00:02:56 . Memory (MB): peak = 1192.668 ; gain = 110.883
+
+Phase 4.1.2 Post Placement Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=5.018. For the most accurate timing information please run report_timing.
+Phase 4.1.2 Post Placement Optimization | Checksum: 10ae580d8
+
+Time (s): cpu = 00:03:46 ; elapsed = 00:02:57 . Memory (MB): peak = 1192.668 ; gain = 110.883
+Phase 4.1 Post Commit Optimization | Checksum: 10ae580d8
+
+Time (s): cpu = 00:03:47 ; elapsed = 00:02:57 . Memory (MB): peak = 1192.668 ; gain = 110.883
+
+Phase 4.2 Sweep Clock Roots: Post-Placement
+Phase 4.2 Sweep Clock Roots: Post-Placement | Checksum: 10ae580d8
+
+Time (s): cpu = 00:03:47 ; elapsed = 00:02:58 . Memory (MB): peak = 1192.668 ; gain = 110.883
+
+Phase 4.3 Post Placement Cleanup
+Phase 4.3 Post Placement Cleanup | Checksum: 10ae580d8
+
+Time (s): cpu = 00:03:48 ; elapsed = 00:02:58 . Memory (MB): peak = 1192.668 ; gain = 110.883
+
+Phase 4.4 Placer Reporting
+Phase 4.4 Placer Reporting | Checksum: 10ae580d8
+
+Time (s): cpu = 00:03:48 ; elapsed = 00:02:58 . Memory (MB): peak = 1192.668 ; gain = 110.883
+
+Phase 4.5 Final Placement Cleanup
+Phase 4.5 Final Placement Cleanup | Checksum: 1802c3af4
+
+Time (s): cpu = 00:03:48 ; elapsed = 00:02:59 . Memory (MB): peak = 1192.668 ; gain = 110.883
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1802c3af4
+
+Time (s): cpu = 00:03:49 ; elapsed = 00:02:59 . Memory (MB): peak = 1192.668 ; gain = 110.883
+Ending Placer Task | Checksum: a40169a6
+
+Time (s): cpu = 00:03:49 ; elapsed = 00:02:59 . Memory (MB): peak = 1192.668 ; gain = 110.883
+INFO: [Common 17-83] Releasing license: Implementation
+38 Infos, 13 Warnings, 13 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:03:56 ; elapsed = 00:03:04 . Memory (MB): peak = 1192.668 ; gain = 110.883
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:25 ; elapsed = 00:00:12 . Memory (MB): peak = 1192.668 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:28 ; elapsed = 00:00:17 . Memory (MB): peak = 1192.668 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.147 . Memory (MB): peak = 1192.668 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.550 . Memory (MB): peak = 1192.668 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1192.668 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35ti'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 109b17d0 ConstDB: 0 ShapeSum: 936651d6 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 9fd74fa7
+
+Time (s): cpu = 00:01:15 ; elapsed = 00:01:14 . Memory (MB): peak = 1257.387 ; gain = 64.719
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 9fd74fa7
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:01:15 . Memory (MB): peak = 1257.387 ; gain = 64.719
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 9fd74fa7
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:01:16 . Memory (MB): peak = 1257.387 ; gain = 64.719
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 9fd74fa7
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:01:16 . Memory (MB): peak = 1257.387 ; gain = 64.719
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: b31fcbe3
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:01:43 . Memory (MB): peak = 1296.281 ; gain = 103.613
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=5.105  | TNS=0.000  | WHS=-0.489 | THS=-1089.922|
+
+Phase 2 Router Initialization | Checksum: 1885f947f
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:01:56 . Memory (MB): peak = 1314.988 ; gain = 122.320
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 224872ba9
+
+Time (s): cpu = 00:02:30 ; elapsed = 00:02:02 . Memory (MB): peak = 1314.988 ; gain = 122.320
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 2208
+ Number of Nodes with overlaps = 129
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 0
+
+Phase 4.1.1 Update Timing
+Phase 4.1.1 Update Timing | Checksum: 13ba95552
+
+Time (s): cpu = 00:03:10 ; elapsed = 00:02:28 . Memory (MB): peak = 1314.988 ; gain = 122.320
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.739  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1340a5b3d
+
+Time (s): cpu = 00:03:11 ; elapsed = 00:02:28 . Memory (MB): peak = 1314.988 ; gain = 122.320
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 0
+
+Phase 4.2.1 Update Timing
+Phase 4.2.1 Update Timing | Checksum: 1cdcd66d3
+
+Time (s): cpu = 00:03:12 ; elapsed = 00:02:29 . Memory (MB): peak = 1314.988 ; gain = 122.320
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.739  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 15ca63145
+
+Time (s): cpu = 00:03:12 ; elapsed = 00:02:30 . Memory (MB): peak = 1314.988 ; gain = 122.320
+Phase 4 Rip-up And Reroute | Checksum: 15ca63145
+
+Time (s): cpu = 00:03:13 ; elapsed = 00:02:30 . Memory (MB): peak = 1314.988 ; gain = 122.320
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 12b5992be
+
+Time (s): cpu = 00:03:20 ; elapsed = 00:02:34 . Memory (MB): peak = 1314.988 ; gain = 122.320
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.739  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 12b5992be
+
+Time (s): cpu = 00:03:20 ; elapsed = 00:02:34 . Memory (MB): peak = 1314.988 ; gain = 122.320
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 12b5992be
+
+Time (s): cpu = 00:03:20 ; elapsed = 00:02:34 . Memory (MB): peak = 1314.988 ; gain = 122.320
+Phase 5 Delay and Skew Optimization | Checksum: 12b5992be
+
+Time (s): cpu = 00:03:20 ; elapsed = 00:02:34 . Memory (MB): peak = 1314.988 ; gain = 122.320
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 121ae14c0
+
+Time (s): cpu = 00:03:30 ; elapsed = 00:02:40 . Memory (MB): peak = 1314.988 ; gain = 122.320
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=3.739  | TNS=0.000  | WHS=0.006  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1c8345224
+
+Time (s): cpu = 00:03:30 ; elapsed = 00:02:40 . Memory (MB): peak = 1314.988 ; gain = 122.320
+Phase 6 Post Hold Fix | Checksum: 1c8345224
+
+Time (s): cpu = 00:03:30 ; elapsed = 00:02:40 . Memory (MB): peak = 1314.988 ; gain = 122.320
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 8.43849 %
+  Global Horizontal Routing Utilization  = 10.6739 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 11c165215
+
+Time (s): cpu = 00:03:31 ; elapsed = 00:02:41 . Memory (MB): peak = 1314.988 ; gain = 122.320
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 11c165215
+
+Time (s): cpu = 00:03:31 ; elapsed = 00:02:41 . Memory (MB): peak = 1314.988 ; gain = 122.320
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 116dddee1
+
+Time (s): cpu = 00:03:36 ; elapsed = 00:02:46 . Memory (MB): peak = 1314.988 ; gain = 122.320
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=3.739  | TNS=0.000  | WHS=0.006  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 116dddee1
+
+Time (s): cpu = 00:03:36 ; elapsed = 00:02:46 . Memory (MB): peak = 1314.988 ; gain = 122.320
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:03:36 ; elapsed = 00:02:46 . Memory (MB): peak = 1314.988 ; gain = 122.320
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+52 Infos, 13 Warnings, 13 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:03:43 ; elapsed = 00:02:51 . Memory (MB): peak = 1314.988 ; gain = 122.320
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:28 ; elapsed = 00:00:12 . Memory (MB): peak = 1314.988 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:31 ; elapsed = 00:00:15 . Memory (MB): peak = 1314.988 ; gain = 0.000
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.runs/impl_1/SDC_CLL_wrapper_drc_routed.rpt.
+report_drc: Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1314.988 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1L, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+report_timing_summary: Time (s): cpu = 00:00:50 ; elapsed = 00:00:29 . Memory (MB): peak = 1314.988 ; gain = 0.000
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+report_power: Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 1362.168 ; gain = 47.180
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35ti'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-20] Rule violation (CFGBVS-1) Missing CFGBVS and CONFIG_VOLTAGE Design Properties - Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa1/a0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa1/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa1/a0__0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa1/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa1/a0__1 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa1/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa2/a0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa2/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa2/a0__0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa2/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa2/a0__1 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa2/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa3/a0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa3/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa3/a0__0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa3/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa3/a0__1 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa3/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa4/a0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa4/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa4/a0__0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa4/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa4/a0__1 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa4/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa5/a0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa5/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa5/a0__0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa5/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa5/a0__1 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multa5/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb2/a0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb2/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb2/a0__0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb2/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb2/a0__1 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb2/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb3/a0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb3/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb3/a0__0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb3/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb3/a0__1 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb3/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb4/a0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb4/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb4/a0__0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb4/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb4/a0__1 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb4/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb5/a0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb5/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb5/a0__0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb5/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb5/a0__1 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/filt1_1/multb5/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y1_1/mult1/a0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y1_1/mult1/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y1_1/mult1/a0__0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y1_1/mult1/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y1_1/mult1/a0__1 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y1_1/mult1/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y1_2/mult1/a0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y1_2/mult1/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y1_2/mult1/a0__0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y1_2/mult1/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y1_2/mult1/a0__1 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y1_2/mult1/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y1_3/mult1/a0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y1_3/mult1/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y1_3/mult1/a0__0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y1_3/mult1/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y1_3/mult1/a0__1 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y1_3/mult1/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y2_2/mult1/a0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y2_2/mult1/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y2_2/mult1/a0__0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y2_2/mult1/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y2_2/mult1/a0__1 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y2_2/mult1/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y2_3/mult1/a0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y2_3/mult1/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y2_3/mult1/a0__0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y2_3/mult1/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y2_3/mult1/a0__1 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y2_3/mult1/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y3_1/mult1/a0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y3_1/mult1/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y3_1/mult1/a0__0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y3_1/mult1/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y3_1/mult1/a0__1 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y3_1/mult1/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y3_2/mult1/a0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y3_2/mult1/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y3_2/mult1/a0__0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y3_2/mult1/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y3_2/mult1/a0__1 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y3_2/mult1/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y3_3/mult1/a0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y3_3/mult1/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y3_3/mult1/a0__0 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y3_3/mult1/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/alarm_HT_v_0/inst/alarm/y3_3/mult1/a0__1 input SDC_CLL_i/alarm_HT_v_0/inst/alarm/y3_3/mult1/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult0/a0 input SDC_CLL_i/process_v_0/inst/lineal_1/mult0/a0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult0/a0__1 input SDC_CLL_i/process_v_0/inst/lineal_1/mult0/a0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult1/a0 input SDC_CLL_i/process_v_0/inst/lineal_1/mult1/a0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult1/a0 input SDC_CLL_i/process_v_0/inst/lineal_1/mult1/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult1/a0__0 input SDC_CLL_i/process_v_0/inst/lineal_1/mult1/a0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult1/a0__0 input SDC_CLL_i/process_v_0/inst/lineal_1/mult1/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult1/a0__1 input SDC_CLL_i/process_v_0/inst/lineal_1/mult1/a0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult1/a0__1 input SDC_CLL_i/process_v_0/inst/lineal_1/mult1/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult2/a0 input SDC_CLL_i/process_v_0/inst/lineal_1/mult2/a0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult2/a0 input SDC_CLL_i/process_v_0/inst/lineal_1/mult2/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult2/a0__0 input SDC_CLL_i/process_v_0/inst/lineal_1/mult2/a0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult2/a0__0 input SDC_CLL_i/process_v_0/inst/lineal_1/mult2/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult2/a0__1 input SDC_CLL_i/process_v_0/inst/lineal_1/mult2/a0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult2/a0__1 input SDC_CLL_i/process_v_0/inst/lineal_1/mult2/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult3/a0 input SDC_CLL_i/process_v_0/inst/lineal_1/mult3/a0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult3/a0 input SDC_CLL_i/process_v_0/inst/lineal_1/mult3/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult3/a0__0 input SDC_CLL_i/process_v_0/inst/lineal_1/mult3/a0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult3/a0__0 input SDC_CLL_i/process_v_0/inst/lineal_1/mult3/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult3/a0__1 input SDC_CLL_i/process_v_0/inst/lineal_1/mult3/a0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult3/a0__1 input SDC_CLL_i/process_v_0/inst/lineal_1/mult3/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult4/a0 input SDC_CLL_i/process_v_0/inst/lineal_1/mult4/a0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult4/a0 input SDC_CLL_i/process_v_0/inst/lineal_1/mult4/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult4/a0__0 input SDC_CLL_i/process_v_0/inst/lineal_1/mult4/a0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult4/a0__0 input SDC_CLL_i/process_v_0/inst/lineal_1/mult4/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult4/a0__1 input SDC_CLL_i/process_v_0/inst/lineal_1/mult4/a0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/lineal_1/mult4/a0__1 input SDC_CLL_i/process_v_0/inst/lineal_1/mult4/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult0/a0 input SDC_CLL_i/process_v_0/inst/pid2/mult0/a0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult0/a0__1 input SDC_CLL_i/process_v_0/inst/pid2/mult0/a0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult1/a0 input SDC_CLL_i/process_v_0/inst/pid2/mult1/a0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult1/a0__1 input SDC_CLL_i/process_v_0/inst/pid2/mult1/a0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult2/a0 input SDC_CLL_i/process_v_0/inst/pid2/mult2/a0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult2/a0 input SDC_CLL_i/process_v_0/inst/pid2/mult2/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult2/a0__0 input SDC_CLL_i/process_v_0/inst/pid2/mult2/a0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult2/a0__0 input SDC_CLL_i/process_v_0/inst/pid2/mult2/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult2/a0__1 input SDC_CLL_i/process_v_0/inst/pid2/mult2/a0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult2/a0__1 input SDC_CLL_i/process_v_0/inst/pid2/mult2/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult3/a0 input SDC_CLL_i/process_v_0/inst/pid2/mult3/a0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult3/a0 input SDC_CLL_i/process_v_0/inst/pid2/mult3/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult3/a0__0 input SDC_CLL_i/process_v_0/inst/pid2/mult3/a0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult3/a0__0 input SDC_CLL_i/process_v_0/inst/pid2/mult3/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult3/a0__1 input SDC_CLL_i/process_v_0/inst/pid2/mult3/a0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult3/a0__1 input SDC_CLL_i/process_v_0/inst/pid2/mult3/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult4/a0 input SDC_CLL_i/process_v_0/inst/pid2/mult4/a0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult4/a0 input SDC_CLL_i/process_v_0/inst/pid2/mult4/a0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult4/a0__0 input SDC_CLL_i/process_v_0/inst/pid2/mult4/a0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult4/a0__0 input SDC_CLL_i/process_v_0/inst/pid2/mult4/a0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult4/a0__1 input SDC_CLL_i/process_v_0/inst/pid2/mult4/a0__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC 23-20] Rule violation (DPIP-1) Input pipelining - DSP SDC_CLL_i/process_v_0/inst/pid2/mult4/a0__1 input SDC_CLL_i/process_v_0/inst/pid2/mult4/a0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+INFO: [Common 17-14] Message 'DRC 23-20' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 238 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./SDC_CLL_wrapper.bit...
+Writing bitstream ./SDC_CLL_wrapper.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+write_bitstream: Time (s): cpu = 00:01:18 ; elapsed = 00:01:02 . Memory (MB): peak = 1750.445 ; gain = 388.277
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 29 11:46:28 2022...

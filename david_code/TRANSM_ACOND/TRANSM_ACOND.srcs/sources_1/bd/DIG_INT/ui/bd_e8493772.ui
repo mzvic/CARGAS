@@ -1,0 +1,24 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.12  2016-01-29 bk=1.3547 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port uart_rxd_in -pg 1 -y 280 -defaultsOSRD
+preplace port uart_txd_out -pg 1 -y 250 -defaultsOSRD
+preplace port JA_0 -pg 1 -y 500 -defaultsOSRD
+preplace port JA_1 -pg 1 -y 480 -defaultsOSRD
+preplace port JA_2 -pg 1 -y 500 -defaultsOSRD
+preplace port JA_3 -pg 1 -y 520 -defaultsOSRD
+preplace port clk -pg 1 -y 460 -defaultsOSRD
+preplace inst package_0 -pg 1 -lvl 2 -y 300 -defaultsOSRD
+preplace inst AD1_driver_v_0 -pg 1 -lvl 1 -y 480 -defaultsOSRD
+preplace netloc rx_1 1 0 2 NJ 280 NJ
+preplace netloc clk_1_1 1 0 2 NJ 260 NJ
+preplace netloc D0_1 1 0 1 N
+preplace netloc package_0_tx 1 2 1 N
+preplace netloc AD1_driver_v_0_SCLK 1 1 2 NJ 520 NJ
+preplace netloc AD1_driver_v_0_data0 1 1 1 -40
+preplace netloc D1_1 1 0 1 N
+preplace netloc AD1_driver_v_0_CS 1 1 2 NJ 500 NJ
+levelinfo -pg 1 -250 -130 130 460 -top -120 -bot 610
+",
+}
+0
