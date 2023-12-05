@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_2" LaunchPart="xc7a35tcsg324-1" LaunchTime="1701712779">
-  <File Type="PHYSOPT-TIMING" Name="arch_wrapper_timing_summary_physopted.rpt"/>
-  <File Type="PHYSOPT-DRC" Name="arch_wrapper_drc_physopted.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="arch_wrapper_power_summary_routed.pb"/>
   <File Type="PHYSOPT-DCP" Name="arch_wrapper_physopt.dcp"/>
-  <File Type="ROUTE-PWR" Name="arch_wrapper_power_routed.rpt"/>
-  <File Type="ROUTE-DRC" Name="arch_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="arch_wrapper_power_summary_routed.pb"/>
+  <File Type="PHYSOPT-DRC" Name="arch_wrapper_drc_physopted.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="arch_wrapper_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="arch_wrapper_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="arch_wrapper_route_status.rpt"/>
@@ -15,12 +12,17 @@
   <File Type="POSTPLACE-PWROPT-TIMING" Name="arch_wrapper_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PLACE-IO" Name="arch_wrapper_io_placed.rpt"/>
   <File Type="OPT-TIMING" Name="arch_wrapper_timing_summary_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="arch_wrapper.hwdef"/>
   <File Type="PLACE-TIMING" Name="arch_wrapper_timing_summary_placed.rpt"/>
-  <File Type="INIT-TIMING" Name="arch_wrapper_timing_summary_init.rpt"/>
-  <File Type="BITSTR-MSK" Name="arch_wrapper.msk"/>
-  <File Type="ROUTE-CLK" Name="arch_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="OPT-HWDEF" Name="arch_wrapper.hwdef"/>
+  <File Type="PWROPT-DCP" Name="arch_wrapper_pwropt.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="arch_wrapper_timing_summary_routed.pb"/>
+  <File Type="BG-DRC" Name="arch_wrapper.drc"/>
+  <File Type="BG-BGN" Name="arch_wrapper.bgn"/>
+  <File Type="ROUTE-TIMING-RPX" Name="arch_wrapper_timing_summary_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="arch_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="arch_wrapper.bit"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="arch_wrapper_postroute_physopt_bb.dcp"/>
   <File Type="PLACE-DCP" Name="arch_wrapper_placed.dcp"/>
   <File Type="BITSTR-NKY" Name="arch_wrapper.nky"/>
   <File Type="PLACE-UTIL" Name="arch_wrapper_utilization_placed.rpt"/>
@@ -28,35 +30,33 @@
   <File Type="OPT-DRC" Name="arch_wrapper_drc_opted.rpt"/>
   <File Type="RDI-RDI" Name="arch_wrapper.vdi"/>
   <File Type="PWROPT-TIMING" Name="arch_wrapper_timing_summary_pwropted.rpt"/>
-  <File Type="BITSTR-MMI" Name="arch_wrapper.mmi"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="arch_wrapper_postplace_pwropt.dcp"/>
-  <File Type="OPT-DCP" Name="arch_wrapper_opt.dcp"/>
-  <File Type="BITSTR-RBT" Name="arch_wrapper.rbt"/>
-  <File Type="PLACE-UTIL-PB" Name="arch_wrapper_utilization_placed.pb"/>
+  <File Type="BITSTR-MMI" Name="arch_wrapper.mmi"/>
   <File Type="BITSTR-BMM" Name="arch_wrapper_bd.bmm"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="arch_wrapper_postroute_physopt.dcp"/>
+  <File Type="BITSTR-RBT" Name="arch_wrapper.rbt"/>
+  <File Type="OPT-DCP" Name="arch_wrapper_opt.dcp"/>
   <File Type="PA-TCL" Name="arch_wrapper.tcl"/>
-  <File Type="PWROPT-DCP" Name="arch_wrapper_pwropt.dcp"/>
-  <File Type="ROUTE-TIMING-PB" Name="arch_wrapper_timing_summary_routed.pb"/>
-  <File Type="BG-DRC" Name="arch_wrapper.drc"/>
-  <File Type="BG-BGN" Name="arch_wrapper.bgn"/>
-  <File Type="ROUTE-TIMING-RPX" Name="arch_wrapper_timing_summary_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="arch_wrapper_postroute_physopt.dcp"/>
+  <File Type="PLACE-UTIL-PB" Name="arch_wrapper_utilization_placed.pb"/>
+  <File Type="ROUTE-CLK" Name="arch_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="arch_wrapper.msk"/>
+  <File Type="INIT-TIMING" Name="arch_wrapper_timing_summary_init.rpt"/>
+  <File Type="ROUTE-DRC" Name="arch_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-PWR" Name="arch_wrapper_power_routed.rpt"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="arch_wrapper_routed_bb.dcp"/>
-  <File Type="ROUTE-DCP" Name="arch_wrapper_routed.dcp"/>
   <File Type="PLACE-CLK" Name="arch_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="arch_wrapper_timing_summary_physopted.rpt"/>
   <File Type="PLACE-CTRL" Name="arch_wrapper_control_sets_placed.rpt"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="arch_wrapper_methodology_drc_opted.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="arch_wrapper_incremental_reuse_placed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="arch_wrapper_methodology_drc_routed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="arch_wrapper_incremental_reuse_pre_placed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="arch_wrapper_methodology_drc_routed.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="arch_wrapper_timing_summary_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="arch_wrapper.bit"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="arch_wrapper_timing_summary_routed.rpt"/>
-  <File Type="BG-BIN" Name="arch_wrapper.bin"/>
-  <File Type="ROUTE-SIMILARITY" Name="arch_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-DCP" Name="arch_wrapper_routed.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="arch_wrapper_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="arch_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-SIMILARITY" Name="arch_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="BG-BIN" Name="arch_wrapper.bin"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="arch_wrapper_timing_summary_routed.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../david_code/Mod_COM_pines_A/signal_gen_pin.sv">

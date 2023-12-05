@@ -39,8 +39,13 @@ def F_FtoFF(msb,lsb):
     out = int(a[2:]+c[0:l]+b[2:],2)
     return out
 
+import time
+
+accumulated_data = []
+last_time = time.time()
+
 def lectura():
-    global arr
+    global arr, accumulated_data, data_count, last_time
     rcv = comms.read(1)
     
     if rcv == b'\xc8': # 200
@@ -59,23 +64,25 @@ def lectura():
         arr = [] # vaciar array
             
     if len(arr) > 1: # si hay dos valores en el array
-            
         output = F_FtoFF(arr[0], arr[1])
-        print(output, output*3.3/4095, output/2**6.00)
-        graficar(output/2**6.00)
-        if opt == '2':
-            with open(f'./datos/{datetime_safe}.txt', 'a+') as f:
-                def handle_close(evt):
-                    f.close()
-                    comms.close()
-                    sys.exit()
-                fig.canvas.mpl_connect('close_event', handle_close)
+        accumulated_data.append(output)
 
-                try:
-                    f.write(f'{output},{output*3.3/4095},{output/2**6.00}\n')
-                except KeyboardInterrupt:
-                    f.close()
-                    sys.exit()
+        if time.time() - last_time >= 1: # ha pasado un segundo
+
+            average_output = sum(accumulated_data) / len(accumulated_data)
+
+            print(average_output, average_output*3.3/4095, average_output/2**6.00)
+            #graficar(average_output/2**6.00)
+            if opt == '2':
+                with open(f'./datos/{datetime_safe}.txt', 'a+') as f:
+                    try:
+                        f.write(f'{average_output},{average_output*3.3/4095},{average_output/2**6.00}\n')
+                    except KeyboardInterrupt:
+                        f.close()
+                        sys.exit()
+            accumulated_data = []
+            last_time = time.time()
+
         return output, output*3.3/4095, output/2**6.00
 
 plt.show()
