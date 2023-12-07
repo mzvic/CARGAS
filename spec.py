@@ -15,7 +15,14 @@ freq = np.fft.fftfreq(len(data[:, 2]), dt)
 
 data_fft = 10*np.log10(data_fft)
 
-plt.plot(freq, data_fft)
+# desviacion estandar
+std = np.std(data[:, 2])
+mean = np.mean(data[:, 2])
+print(std, mean)
+
+
+
+plt.plot(freq, data_fft, std)
 plt.xlabel('Frecuencia')
 plt.ylabel('Amplitud')
 plt.show()

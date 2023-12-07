@@ -16,11 +16,13 @@ for i in column:
         peaks.append(i)
 
 plt.plot(column)
+
 plt.xlabel('N° de muestra')
 plt.ylabel('Temp')
 
 #plt.ylim(-20, 80)
 coefficient_of_variation = (np.std(column) / np.mean(column)) * 100
+
 
 plt.plot([], [], ' ', label='Media de la temperatura: ' + str(np.mean(column)) + '°C')
 plt.plot([], [], ' ', label='Coeficiente de variación: ' + str(coefficient_of_variation) + '%')

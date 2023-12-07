@@ -23,13 +23,13 @@ def modelo():
     from sklearn.linear_model import LinearRegression
     lin = LinearRegression()
     
-    x = [[17.25],[25.1],[30.1],[30.5],[42.0]]
-    y = [[0.7],[20.7],[32.0],[33.3],[63.0]]
+    x = [[17.25],[25.1],[30.1],[30.5],[42.0], [68],[74.0]]
+    y = [[0.7],[20.7],[32.0],[33.3],[63.0], [66.5],[71.8]]
     lin.fit(x, y)
 
     from sklearn.preprocessing import PolynomialFeatures
     
-    poly = PolynomialFeatures(degree=2)
+    poly = PolynomialFeatures(degree=4)
     X_poly = poly.fit_transform(x)
     
     poly.fit(X_poly, y)
@@ -89,23 +89,32 @@ def lectura():
         output = F_FtoFF(arr[0], arr[1])
         accumulated_data.append(output)
 
-        if time.time() - last_time >= 1: # ha pasado un segundo
+        if time.time() - last_time >= 0.2: # ha pasado un segundo
 
             average_output = sum(accumulated_data) / len(accumulated_data)
+            post_avg = predict(average_output/2**6.00)
 
-            print(average_output, average_output*3.3/4095, average_output/2**6.00, predict(average_output/2**6.00))
-            graficar(predict(average_output/2**6.00))
+            print(datetime.now().strftime("%H:%M:%S"), post_avg, average_output*3.3/4095)
+            graficar(post_avg)
+
             if opt == '2':
                 with open(f'./datos/{datetime_safe}.txt', 'a+') as f:
+                    def handle_close(evt):
+                        f.close()
+                        comms.close()
+                        plt.close()
+                        sys.exit()
+                    fig.canvas.mpl_connect('close_event', handle_close)
                     try:
-                        f.write(f'{average_output},{average_output*3.3/4095},{average_output/2**6.00}\n')
+                        f.write(f'{datetime.now().strftime("%H:%M:%S")},{average_output*3.3/4095},{post_avg}\n')
                     except KeyboardInterrupt:
                         f.close()
+                        plt.close()
                         sys.exit()
+
+
             accumulated_data = []
             last_time = time.time()
-
-        return output, output*3.3/4095, output/2**6.00
 
 plt.show()
 while True:
