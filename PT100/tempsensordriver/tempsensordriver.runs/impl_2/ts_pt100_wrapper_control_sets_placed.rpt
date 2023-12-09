@@ -1,0 +1,84 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (lin64) Build 1538259 Fri Apr  8 15:45:23 MDT 2016
+| Date         : Wed Nov 29 20:15:11 2023
+| Host         : mzvic running 64-bit Ubuntu 22.04.3 LTS
+| Command      : report_control_sets -verbose -file ts_pt100_wrapper_control_sets_placed.rpt
+| Design       : ts_pt100_wrapper
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    31 |
+| Unused register locations in slices containing registers |   115 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              42 |           19 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             113 |           38 |
+| Yes          | No                    | No                     |             212 |           63 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             214 |           55 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------+----------------+
+|             Clock Signal            |                                     Enable Signal                                    |                                   Set/Reset Signal                                   | Slice Load Count | Bel Load Count |
++-------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------+----------------+
+|  ts_pt100_i/clk_wiz_0/inst/clk_out1 | ts_pt100_i/AD1_driver_v_0/inst/AD1/state[4]_i_1_n_0                                  | ts_pt100_i/package_ext_0/inst/pack1_ext/TX0/dut0/FSM_sequential_state_send_reg[0][0] |                1 |              5 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out2 | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div1/uut/p_0_in                              | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div1/start_clk/uut/done0                     |                1 |              6 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out1 | ts_pt100_i/package_ext_0/inst/pack1_ext/TX0/dut0/FSM_sequential_state_send_reg[0][0] |                                                                                      |                3 |              6 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out1 | ts_pt100_i/package_ext_0/inst/pack1_ext/TX0/dut0/cont_reg[0]_0[0]                    | ts_pt100_i/package_ext_0/inst/pack1_ext/TX0/dut0/SR[0]                               |                1 |              6 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out2 | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div2/uut/p_0_in                              | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div2/start_clk/uut/done0                     |                2 |              6 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out1 |                                                                                      |                                                                                      |                5 |              6 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out2 | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div_Vg/uut/p_0_in                            | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div_Vg/start_clk/uut/done0                   |                2 |              6 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out1 | ts_pt100_i/package_ext_0/inst/pack1_ext/TX0/dut0/E[0]                                |                                                                                      |                5 |              8 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out1 | ts_pt100_i/package_ext_0/inst/pack1_ext/TX0/dut0/data_shift_reg[10]                  | ts_pt100_i/package_ext_0/inst/pack1_ext/TX0/dut0/SR[0]                               |                3 |             10 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out1 | ts_pt100_i/AD1_driver_v_0/inst/AD1/data0_shift_0                                     |                                                                                      |                2 |             11 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out2 | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div_Vg/uut/dividend_copy[26]_i_1_n_0         |                                                                                      |                5 |             12 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out1 | ts_pt100_i/AD1_driver_v_0/inst/AD1/data0[11]_i_1_n_0                                 |                                                                                      |                2 |             12 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out1 |                                                                                      | ts_pt100_i/package_ext_0/inst/pack1_ext/TX0/dut0/cont_B[11]_i_1_n_0                  |                4 |             12 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out1 | ts_pt100_i/package_ext_0/inst/pack1_ext/TX0/dut0/data_shift_reg[10]                  |                                                                                      |                5 |             12 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out1 | ts_pt100_i/package_ext_0/inst/pack1_ext/capt_data                                    |                                                                                      |                5 |             14 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out2 | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div_Vg/uut/dividend_copy[26]_i_1_n_0         | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div_Vg/start_clk/uut/done0                   |                5 |             16 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out1 |                                                                                      | ts_pt100_i/package_ext_0/inst/pack1_ext/TX0/dut0/cont[17]_i_1_n_0                    |                5 |             17 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out2 | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div1/start_clk/divider_copy_reg[52]          | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1__4_n_0                                       |                7 |             26 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out2 | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div2/start_clk/divider_copy_reg[52]          | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1__6_n_0                                       |                7 |             26 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out2 | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div1/start_clk/divider_copy_reg[52]          |                                                                                      |                5 |             27 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out2 | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div2/start_clk/divider_copy_reg[52]          |                                                                                      |                5 |             27 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out2 | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div1/uut/dividend_copy[27]_i_1_n_0           | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div1/start_clk/uut/done0                     |                7 |             28 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out2 | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div1/uut/result_reg[0]                       |                                                                                      |                8 |             28 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out2 | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div_Vg/uut/result_reg[0]                     |                                                                                      |                8 |             28 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out2 | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div2/uut/result_reg[0]                       |                                                                                      |               11 |             28 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out2 | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div2/uut/dividend_copy[27]_i_1__0_n_0        | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div2/start_clk/uut/done0                     |                7 |             28 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out2 |                                                                                      | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div1/start_clk/uut/done0                     |                9 |             28 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out2 |                                                                                      | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div_Vg/start_clk/uut/done0                   |               10 |             28 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out2 |                                                                                      | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div2/start_clk/uut/done0                     |               10 |             28 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out2 |                                                                                      |                                                                                      |               14 |             36 |
+|  ts_pt100_i/clk_wiz_0/inst/clk_out2 | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1/div_Vg/start_clk/divider_copy_reg[50]        | ts_pt100_i/alarm_HT_v_0/inst/alarm/y1_1__2_n_0                                       |               12 |             51 |
++-------------------------------------+--------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+------------------+----------------+
+
+
