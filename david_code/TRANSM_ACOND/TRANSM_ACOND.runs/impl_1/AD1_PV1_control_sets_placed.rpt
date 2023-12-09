@@ -1,0 +1,66 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
+| Date         : Fri Jun 29 16:40:12 2018
+| Host         : DESKTOP-VFDGOU2 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file AD1_PV1_control_sets_placed.rpt
+| Design       : AD1_PV1
+| Device       : xc7a35ti
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |    57 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               3 |            2 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              44 |           13 |
+| Yes          | No                    | No                     |              58 |           15 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              22 |            7 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------+----------------------------------+------------------+----------------+
+|  Clock Signal  |           Enable Signal          |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++----------------+----------------------------------+----------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | AD1_1/CS3_out                    | UART_TX1/dut1/state_reg[4][0]    |                1 |              1 |
+|  clk_IBUF_BUFG |                                  |                                  |                2 |              3 |
+|  clk_IBUF_BUFG | AD1_1/state[4]_i_1_n_0           | UART_TX1/dut1/state_reg[4][0]    |                2 |              5 |
+|  clk_IBUF_BUFG | UART_TX1/dut1/E[0]               | UART_TX1/dut1/D[9]               |                2 |              6 |
+|  clk_IBUF_BUFG | UART_TX1/dut1/data_shift_reg[10] | UART_TX1/dut1/D[9]               |                2 |             10 |
+|  clk_IBUF_BUFG | AD1_1/data0_shift_0              |                                  |                5 |             11 |
+|  clk_IBUF_BUFG | AD1_1/data0[11]_i_1_n_0          |                                  |                2 |             12 |
+|  clk_IBUF_BUFG | UART_TX1/dut1/data_shift_reg[10] |                                  |                4 |             12 |
+|  clk_IBUF_BUFG | UART_TX1/dut1/state_reg[4][0]    |                                  |                3 |             12 |
+|  clk_IBUF_BUFG | capt_data                        |                                  |                2 |             12 |
+|  clk_IBUF_BUFG |                                  | DIVCLK/divClk                    |                4 |             13 |
+|  clk_IBUF_BUFG |                                  | UART_TX1/dut1/cont_B[13]_i_1_n_0 |                4 |             14 |
+|  clk_IBUF_BUFG |                                  | UART_TX1/dut1/cont[17]_i_1_n_0   |                5 |             17 |
++----------------+----------------------------------+----------------------------------+------------------+----------------+
+
+

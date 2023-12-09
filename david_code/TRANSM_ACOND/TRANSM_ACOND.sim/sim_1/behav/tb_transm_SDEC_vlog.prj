@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  "../../../TRANSM_ACOND.srcs/sources_1/new/signal_gen.sv" --include "../../../../SDC_CLL/SDC_CLL.srcs/sources_1/imports/new"
+sv xil_defaultlib  "../../../TRANSM_ACOND.srcs/sources_1/new/serial_gen_AD.sv" --include "../../../../SDC_CLL/SDC_CLL.srcs/sources_1/imports/new"
+sv xil_defaultlib  "../../../TRANSM_ACOND.srcs/sources_1/new/AD1_drive.sv" --include "../../../../SDC_CLL/SDC_CLL.srcs/sources_1/imports/new"
+sv xil_defaultlib  "../../../../SDC_CLL/SDC_CLL.srcs/sources_1/imports/Radiometro/UART/UART.srcs/sources_1/new/divisor_f.sv" --include "../../../../SDC_CLL/SDC_CLL.srcs/sources_1/imports/new"
+sv xil_defaultlib  "../../../../SDC_CLL/SDC_CLL.srcs/sources_1/imports/Radiometro/UART/UART.srcs/sources_1/new/uart_tx.sv" --include "../../../../SDC_CLL/SDC_CLL.srcs/sources_1/imports/new"
+sv xil_defaultlib  "../../../TRANSM_ACOND.srcs/sim_1/new/tb_transm_SDEC.sv" --include "../../../../SDC_CLL/SDC_CLL.srcs/sources_1/imports/new"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

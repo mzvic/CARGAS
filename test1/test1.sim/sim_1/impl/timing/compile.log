@@ -1,0 +1,39 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mzvic/voltage_receptor_fpga/test1/test1.sim/sim_1/impl/timing/package_ext_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AD1_driver_v
+INFO: [VRFC 10-311] analyzing module AD_driver
+INFO: [VRFC 10-311] analyzing module SDC_CLL_AD1_driver_v_0_2
+INFO: [VRFC 10-311] analyzing module SDC_CLL_clk_box_0_0
+INFO: [VRFC 10-311] analyzing module arch
+INFO: [VRFC 10-311] analyzing module arch_SDC_CLL_AD1_driver_v_0_2_0_0
+INFO: [VRFC 10-311] analyzing module arch_SDC_CLL_clk_box_0_0_0_0
+INFO: [VRFC 10-311] analyzing module arch_clk_wiz_0_0
+INFO: [VRFC 10-311] analyzing module arch_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module arch_package_ext_0_0
+INFO: [VRFC 10-311] analyzing module arch_wrapper
+INFO: [VRFC 10-311] analyzing module arch_xlconstant_0_0
+INFO: [VRFC 10-311] analyzing module clk_box
+INFO: [VRFC 10-311] analyzing module divisor_f
+INFO: [VRFC 10-311] analyzing module pack_ext
+INFO: [VRFC 10-311] analyzing module package_ext
+INFO: [VRFC 10-311] analyzing module pin_tx
+INFO: [VRFC 10-311] analyzing module signal_gen_pin
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/signal_gen_pin.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signal_gen_pin
+WARNING: [VRFC 10-1195] overwriting previous definition of module signal_gen_pin [/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/signal_gen_pin.sv:3]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/div_f_pin.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module div_f_pin
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/divisor_f.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divisor_f
+WARNING: [VRFC 10-1195] overwriting previous definition of module divisor_f [/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/divisor_f.sv:14]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/pin_tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pin_tx
+WARNING: [VRFC 10-1195] overwriting previous definition of module pin_tx [/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/pin_tx.sv:19]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/pin_rx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pin_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/pack_ext.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pack_ext
+WARNING: [VRFC 10-1195] overwriting previous definition of module pack_ext [/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/pack_ext.sv:9]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/package_ext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module package_ext
+WARNING: [VRFC 10-1195] overwriting previous definition of module package_ext [/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/package_ext.v:6]

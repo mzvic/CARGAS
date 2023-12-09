@@ -1,0 +1,9 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.12  2016-01-29 bk=1.3547 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port uart_rxd_in -pg 1 -y -60 -defaultsOSRD
+preplace port uart_txd_out -pg 1 -y -50 -defaultsOSRD
+preplace netloc uart_rxd_in_1 1 0 1 10
+levelinfo -pg 1 -10 30 -top -80 -bot 40
+",
+}

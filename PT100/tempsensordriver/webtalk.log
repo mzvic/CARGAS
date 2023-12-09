@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Thu Nov 23 15:21:22 2023
+# Process ID: 13796
+# Current directory: C:/Users/alarc/OneDrive/Desktop/PT100/tempsensordriver
+# Command line: wbtcv.exe -mode batch -source C:/Users/alarc/OneDrive/Desktop/PT100/tempsensordriver/tempsensordriver.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: C:/Users/alarc/OneDrive/Desktop/PT100/tempsensordriver/webtalk.log
+# Journal file: C:/Users/alarc/OneDrive/Desktop/PT100/tempsensordriver\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/alarc/OneDrive/Desktop/PT100/tempsensordriver/tempsensordriver.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Nov 23 15:21:25 2023...

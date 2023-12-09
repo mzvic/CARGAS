@@ -1,0 +1,131 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Mon Dec 23 14:19:04 2019
+# Process ID: 11536
+# Current directory: C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.runs/impl_1
+# Command line: vivado.exe -log SDC_CLL_wrapper.vdi -applog -messageDb vivado.pb -mode batch -source SDC_CLL_wrapper.tcl -notrace
+# Log file: C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.runs/impl_1/SDC_CLL_wrapper.vdi
+# Journal file: C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source SDC_CLL_wrapper.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 2524 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Device 21-403] Loading part xc7a35ticsg324-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/ip/SDC_CLL_clk_wiz_0_0/SDC_CLL_clk_wiz_0_0_board.xdc] for cell 'SDC_CLL_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/ip/SDC_CLL_clk_wiz_0_0/SDC_CLL_clk_wiz_0_0_board.xdc] for cell 'SDC_CLL_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/ip/SDC_CLL_clk_wiz_0_0/SDC_CLL_clk_wiz_0_0.xdc] for cell 'SDC_CLL_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/ip/SDC_CLL_clk_wiz_0_0/SDC_CLL_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/ip/SDC_CLL_clk_wiz_0_0/SDC_CLL_clk_wiz_0_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 1049.355 ; gain = 506.727
+Finished Parsing XDC File [c:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/ip/SDC_CLL_clk_wiz_0_0/SDC_CLL_clk_wiz_0_0.xdc] for cell 'SDC_CLL_i/clk_wiz_0/inst'
+Parsing XDC File [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led3[2]'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led3[1]'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led3[0]'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_03'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB_4'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB_5'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB_6'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JB_7'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:67]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:67]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JC_2'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JC_3'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JC_4'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JC_5'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JC_6'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JC_7'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JD_0'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JD_1'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JD_2'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JD_3'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JD_4'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JD_5'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JD_6'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'JD_7'. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/CePIA_Instr/Desktop/Hardware/Cargas/28_11/SDC_CLL/SDC_CLL.srcs/constrs_1/imports/Mods/Arty_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+link_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 1049.367 ; gain = 816.008
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35ti'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.371 . Memory (MB): peak = 1049.367 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+
+Starting Logic Optimization Task
+Implement Debug Cores | Checksum: 1bbc97a3c
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 18a92ea33
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1049.367 ; gain = 0.000
+
+Phase 2 Constant Propagation
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 2 load pin(s).
+INFO: [Opt 31-10] Eliminated 458 cells.
+Phase 2 Constant Propagation | Checksum: 19fb43f3d
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1049.367 ; gain = 0.000
+
+Phase 3 Sweep

@@ -1,0 +1,12 @@
+0.2
+2016.1
+/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/div_f_pin.sv,1550790286,verilog,,,,,../../../../../david_code/SDC_CLL/SDC_CLL.srcs/sources_1/imports/new:../../../../test1.ip_user_files/ipstatic/clk_wiz_v5_3,,,,,
+/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/divisor_f.sv,1666797172,verilog,,,,,../../../../../david_code/SDC_CLL/SDC_CLL.srcs/sources_1/imports/new:../../../../test1.ip_user_files/ipstatic/clk_wiz_v5_3,,,,,
+/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/pack_ext.sv,1575920039,verilog,,/home/mzvic/voltage_receptor_fpga/david_code/SDC_CLL/SDC_CLL.srcs/sources_1/imports/new/baudrate_list.vh:/home/mzvic/voltage_receptor_fpga/david_code/SDC_CLL/SDC_CLL.srcs/sources_1/imports/new/div_frecuencias.vh,,,../../../../../david_code/SDC_CLL/SDC_CLL.srcs/sources_1/imports/new:../../../../test1.ip_user_files/ipstatic/clk_wiz_v5_3,,,,,
+/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/package_ext.v,1695904789,verilog,,/home/mzvic/voltage_receptor_fpga/david_code/SDC_CLL/SDC_CLL.srcs/sources_1/imports/new/baudrate_list.vh:/home/mzvic/voltage_receptor_fpga/david_code/SDC_CLL/SDC_CLL.srcs/sources_1/imports/new/div_frecuencias.vh,,,../../../../../david_code/SDC_CLL/SDC_CLL.srcs/sources_1/imports/new:../../../../test1.ip_user_files/ipstatic/clk_wiz_v5_3,,,,,
+/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/pin_rx.sv,1550605266,verilog,,,,,../../../../../david_code/SDC_CLL/SDC_CLL.srcs/sources_1/imports/new:../../../../test1.ip_user_files/ipstatic/clk_wiz_v5_3,,,,,
+/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/pin_tx.sv,1550605310,verilog,,,,,../../../../../david_code/SDC_CLL/SDC_CLL.srcs/sources_1/imports/new:../../../../test1.ip_user_files/ipstatic/clk_wiz_v5_3,,,,,
+/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/signal_gen_pin.sv,1550605298,verilog,,,,,../../../../../david_code/SDC_CLL/SDC_CLL.srcs/sources_1/imports/new:../../../../test1.ip_user_files/ipstatic/clk_wiz_v5_3,,,,,
+/home/mzvic/voltage_receptor_fpga/david_code/SDC_CLL/SDC_CLL.srcs/sources_1/imports/new/baudrate_list.vh,1521305128,,,,,,,,,,,
+/home/mzvic/voltage_receptor_fpga/david_code/SDC_CLL/SDC_CLL.srcs/sources_1/imports/new/div_frecuencias.vh,1548343518,,,,,,,,,,,
+/home/mzvic/voltage_receptor_fpga/test1/test1.sim/sim_1/impl/timing/package_ext_time_impl.v,1698163940,verilog,,,,,../../../../../david_code/SDC_CLL/SDC_CLL.srcs/sources_1/imports/new:../../../../test1.ip_user_files/ipstatic/clk_wiz_v5_3,,,,,

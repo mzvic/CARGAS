@@ -1,0 +1,137 @@
+{
+   guistr: "# # String gsaved with Nlview 6.5.12  2016-01-29 bk=1.3547 VDI=39 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port JB_7 -pg 1 -y 1120 -defaultsOSRD
+preplace port JC_2 -pg 1 -y 770 -defaultsOSRD
+preplace port JC_3 -pg 1 -y 760 -defaultsOSRD
+preplace port JC_4 -pg 1 -y 920 -defaultsOSRD
+preplace port JC_5 -pg 1 -y 930 -defaultsOSRD
+preplace port JD_0 -pg 1 -y 430 -defaultsOSRD
+preplace port JC_6 -pg 1 -y 950 -defaultsOSRD
+preplace port JD_1 -pg 1 -y 470 -defaultsOSRD
+preplace port JC_7 -pg 1 -y 940 -defaultsOSRD
+preplace port JD_2 -pg 1 -y 490 -defaultsOSRD
+preplace port uart_txd_out -pg 1 -y -380 -defaultsOSRD
+preplace port uart_rxd_in -pg 1 -y -110 -defaultsOSRD
+preplace port JD_3 -pg 1 -y 450 -defaultsOSRD
+preplace port JB_0 -pg 1 -y -160 -defaultsOSRD
+preplace port JD_4 -pg 1 -y 580 -defaultsOSRD
+preplace port JD_5 -pg 1 -y 630 -defaultsOSRD
+preplace port led_01 -pg 1 -y 20 -defaultsOSRD
+preplace port JD_6 -pg 1 -y 650 -defaultsOSRD
+preplace port JB_4 -pg 1 -y 1100 -defaultsOSRD
+preplace port JD_7 -pg 1 -y 600 -defaultsOSRD
+preplace port clk -pg 1 -y -190 -defaultsOSRD
+preplace port JB_5 -pg 1 -y 1110 -defaultsOSRD
+preplace port JC_0 -pg 1 -y 740 -defaultsOSRD
+preplace port JB_6 -pg 1 -y 1130 -defaultsOSRD
+preplace port JC_1 -pg 1 -y 750 -defaultsOSRD
+preplace portBus led1 -pg 1 -y 0 -defaultsOSRD
+preplace portBus led4 -pg 1 -y 300 -defaultsOSRD
+preplace inst alarm_HT_v_0 -pg 1 -lvl 4 -y 290 -defaultsOSRD
+preplace inst AD1_driver_v_4 -pg 1 -lvl 3 -y 1090 -defaultsOSRD
+preplace inst process_v_0 -pg 1 -lvl 6 -y -20 -defaultsOSRD
+preplace inst fixedPoint_0 -pg 1 -lvl 2 -y -270 -defaultsOSRD
+preplace inst pre_process_0 -pg 1 -lvl 5 -y 120 -defaultsOSRD
+preplace inst PWM_0 -pg 1 -lvl 7 -y -130 -defaultsOSRD -resize 200 120
+preplace inst package_ext_0 -pg 1 -lvl 3 -y 30 -defaultsOSRD
+preplace inst AD1_driver_v_0 -pg 1 -lvl 3 -y 410 -defaultsOSRD
+preplace inst AD1_driver_v_1 -pg 1 -lvl 3 -y 730 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -y -190 -defaultsOSRD
+preplace inst clk_box_0 -pg 1 -lvl 2 -y 560 -defaultsOSRD
+preplace inst AD1_driver_v_2 -pg 1 -lvl 3 -y 570 -defaultsOSRD
+preplace inst AD1_driver_v_3 -pg 1 -lvl 3 -y 910 -defaultsOSRD
+preplace netloc AD1_driver_v_4_data0 1 3 1 970
+preplace netloc AD1_driver_v_4_data1 1 3 4 900 -190 NJ -190 NJ -190 NJ
+preplace netloc pre_process_0_yT_1 1 5 1 N
+preplace netloc D0_1 1 0 3 NJ 430 NJ 430 NJ
+preplace netloc package_ext_0_out_01 1 3 2 NJ -170 1560
+preplace netloc D0_2 1 0 3 NJ 750 NJ 750 NJ
+preplace netloc AD1_driver_v_3_data0 1 3 1 950
+preplace netloc alarm_HT_v_0_yT3_1 1 1 4 120 -130 NJ -280 NJ -280 1400
+preplace netloc pre_process_0_ind_config 1 5 3 NJ 300 NJ 300 NJ
+preplace netloc package_ext_0_out_02 1 3 2 NJ -150 1550
+preplace netloc D0_3 1 0 3 NJ 630 NJ 630 NJ
+preplace netloc AD1_driver_v_1_SCLK 1 3 5 NJ 760 NJ 760 NJ 760 NJ 760 NJ
+preplace netloc D0_4 1 0 3 NJ 1110 NJ 1110 NJ
+preplace netloc AD1_driver_v_3_data1 1 3 1 960
+preplace netloc alarm_HT_v_0_yT3_2 1 1 4 110 310 NJ 310 NJ 110 1330
+preplace netloc package_ext_0_out_03 1 3 2 NJ -120 1540
+preplace netloc package_ext_0_out_04 1 3 2 NJ -110 1530
+preplace netloc PWM_0_pin_pwm 1 7 1 NJ
+preplace netloc alarm_HT_v_0_yT3_3 1 1 4 130 300 NJ 300 NJ 120 1350
+preplace netloc package_ext_0_out_05 1 3 2 NJ -90 1520
+preplace netloc package_ext_0_out_06 1 3 2 NJ -70 1510
+preplace netloc package_ext_0_out_10 1 3 2 NJ 10 1410
+preplace netloc AD1_driver_v_2_SCLK 1 3 5 NJ 600 NJ 600 NJ 600 NJ 600 NJ
+preplace netloc package_ext_0_tx 1 3 5 NJ -380 NJ -380 NJ -380 NJ -380 NJ
+preplace netloc package_ext_0_out_07 1 3 2 NJ -50 1500
+preplace netloc package_ext_0_out_11 1 3 2 NJ 30 1390
+preplace netloc package_ext_0_out_12 1 3 2 NJ 100 1370
+preplace netloc package_ext_0_out_08 1 3 2 NJ -30 1460
+preplace netloc package_ext_0_out_13 1 3 2 NJ 70 1380
+preplace netloc package_ext_0_out_09 1 3 2 NJ -10 1420
+preplace netloc package_ext_0_out_14 1 3 2 NJ 80 1360
+preplace netloc pre_process_0_kc_1 1 5 1 N
+preplace netloc fixedPoint_0_sal_1 1 2 1 540
+preplace netloc package_ext_0_out_15 1 3 1 840
+preplace netloc fixedPoint_0_sal_2 1 2 1 530
+preplace netloc process_v_0_mode_ind 1 6 2 N 0 NJ
+preplace netloc package_ext_0_out_16 1 3 2 NJ 130 1340
+preplace netloc fixedPoint_0_sal_3 1 2 1 520
+preplace netloc fixedPoint_0_sal_4 1 2 1 430
+preplace netloc AD1_driver_v_3_SCLK 1 3 5 NJ 940 NJ 940 NJ 940 NJ 940 NJ
+preplace netloc D1_1_1 1 0 3 NJ 950 NJ 950 NJ
+preplace netloc AD1_driver_v_2_data0 1 3 1 910
+preplace netloc alarm_HT_v_0_yT2_1 1 1 4 120 -430 NJ -430 NJ -430 1440
+preplace netloc pre_process_0_Ti_1 1 5 1 N
+preplace netloc pre_process_0_Td_1 1 5 1 N
+preplace netloc fixedPoint_0_sal_5 1 2 1 510
+preplace netloc AD1_driver_v_2_data1 1 3 1 920
+preplace netloc alarm_HT_v_0_yT2_2 1 1 4 100 -420 NJ -420 NJ -420 1490
+preplace netloc fixedPoint_0_sal_6 1 2 1 490
+preplace netloc alarm_HT_v_0_yT2_3 1 1 4 140 -140 NJ -290 NJ -290 1470
+preplace netloc fixedPoint_0_sal_7 1 2 1 470
+preplace netloc AD1_driver_v_1_CS 1 3 5 NJ 740 NJ 740 NJ 740 NJ 740 NJ
+preplace netloc fixedPoint_0_sal_8 1 2 1 450
+preplace netloc pre_process_0_modo_1 1 5 1 N
+preplace netloc fixedPoint_0_sal_9 1 2 1 420
+preplace netloc AD1_driver_v_0_CS 1 3 5 880 460 NJ 430 NJ 430 NJ 430 NJ
+preplace netloc clk_box_0_divClk1 1 2 1 NJ
+preplace netloc AD1_driver_v_0_data0 1 3 1 880
+preplace netloc AD1_driver_v_4_CS 1 3 5 NJ 1100 NJ 1100 NJ 1100 NJ 1100 NJ
+preplace netloc clk_box_0_divClk2 1 2 1 470
+preplace netloc AD1_driver_v_0_data1 1 3 1 890
+preplace netloc rx_1 1 0 3 NJ -110 NJ -90 NJ
+preplace netloc clk_box_0_divClk3 1 2 1 440
+preplace netloc alarm_HT_v_0_stop_out 1 4 1 1320
+preplace netloc AD1_driver_v_0_SCLK 1 3 5 850 450 NJ 450 NJ 450 NJ 450 NJ
+preplace netloc AD1_driver_v_2_CS 1 3 5 NJ 580 NJ 580 NJ 580 NJ 580 NJ
+preplace netloc AD1_driver_v_3_CS 1 3 5 NJ 920 NJ 920 NJ 920 NJ 920 NJ
+preplace netloc process_v_0_clk_tm 1 6 2 N 20 NJ
+preplace netloc package_ext_0_send 1 2 2 560 320 870
+preplace netloc D0_1_1 1 0 3 NJ 930 NJ 930 NJ
+preplace netloc AD1_driver_v_1_data0 1 3 1 930
+preplace netloc AD1_driver_v_1_data1 1 3 1 940
+preplace netloc D1_1 1 0 3 NJ 450 NJ 450 NJ
+preplace netloc clk_wiz_0_clk_out1 1 1 6 NJ -120 NJ -260 NJ -260 NJ -260 NJ -260 2140
+preplace netloc alarm_HT_v_0_yT1_1 1 1 4 110 -440 NJ -440 NJ -440 1450
+preplace netloc AD1_driver_v_4_SCLK 1 3 5 NJ 1120 NJ 1120 NJ 1120 NJ 1120 NJ
+preplace netloc D1_2 1 0 3 NJ 770 NJ 770 NJ
+preplace netloc clk_wiz_0_clk_out2 1 1 2 NJ 370 500
+preplace netloc alarm_HT_v_0_yT1_2 1 1 4 140 -410 NJ -410 NJ -410 1430
+preplace netloc D1_3 1 0 3 NJ 490 NJ 490 NJ
+preplace netloc clk_wiz_0_clk_out3 1 1 2 NJ -110 NJ
+preplace netloc alarm_HT_v_0_yT1_3 1 1 4 130 -400 NJ -400 NJ -400 1480
+preplace netloc D1_4 1 0 3 NJ 1130 NJ 1130 NJ
+preplace netloc clk_wiz_0_clk_out4 1 1 5 NJ -100 NJ -240 930 -130 NJ -180 NJ
+preplace netloc alarm_HT_v_0_HT_on 1 2 3 550 -310 NJ -310 1310
+preplace netloc pre_process_0_SP_1 1 5 1 N
+preplace netloc clk_1 1 0 1 NJ
+preplace netloc process_v_0_CV 1 2 5 560 -250 NJ -250 NJ -250 NJ -250 2130
+levelinfo -pg 1 -140 -20 300 720 1180 1710 1990 2260 2400 -top -570 -bot 1370
+",
+}
+{
+   da_board_cnt: "1",
+}

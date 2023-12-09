@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:synthFlowMode="None" bd:tool_version="2016.1" bd:top="probe_rcv" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>probe_rcv</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:busInterfaces>
+      <spirit:busInterface>
+        <spirit:name>CLK.CLK</spirit:name>
+        <spirit:displayName>Clk</spirit:displayName>
+        <spirit:description>Clock</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="clock" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="clock_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>CLK</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>clk</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters/>
+      </spirit:busInterface>
+    </spirit:busInterfaces>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="probe_rcv_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+      <spirit:ports>
+        <spirit:port>
+          <spirit:name>clk</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>uart_rxd_in</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>uart_txd_out</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>JB_0</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+      </spirit:ports>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>probe_rcv_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>syncro_v_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="syncro_v" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">probe_rcv_syncro_v_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">syncro_v</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>package_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="package" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">probe_rcv_package_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">package</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>PWM_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="PWM" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">probe_rcv_PWM_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">PWM</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>process_v_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="process_v" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">probe_rcv_process_v_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">process_v</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>syncro_v_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="syncro_v" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">probe_rcv_syncro_v_1_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">syncro_v</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>clk_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="syncro_v_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="package_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="PWM_0" spirit:portRef="clk"/>
+        <spirit:internalPortReference spirit:componentRef="process_v_0" spirit:portRef="clk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>rx_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="uart_rxd_in"/>
+        <spirit:internalPortReference spirit:componentRef="package_0" spirit:portRef="rx"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>package_0_tx</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="package_0" spirit:portRef="tx"/>
+        <spirit:externalPortReference spirit:portRef="uart_txd_out"/>
+        <spirit:internalPortReference spirit:componentRef="syncro_v_1" spirit:portRef="clk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>PWM_0_pin_pwm</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="PWM_0" spirit:portRef="pin_pwm"/>
+        <spirit:externalPortReference spirit:portRef="JB_0"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>process_v_0_read_data</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="syncro_v_0" spirit:portRef="sync_out"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>process_v_0_ctrl_ready</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="process_v_0" spirit:portRef="ctrl_ready"/>
+        <spirit:internalPortReference spirit:componentRef="syncro_v_1" spirit:portRef="sync_in"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>package_0_SP</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="package_0" spirit:portRef="SP"/>
+        <spirit:internalPortReference spirit:componentRef="syncro_v_0" spirit:portRef="data_in1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>package_0_MODO</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="package_0" spirit:portRef="MODO"/>
+        <spirit:internalPortReference spirit:componentRef="syncro_v_0" spirit:portRef="data_in2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>package_0_param1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="package_0" spirit:portRef="param1"/>
+        <spirit:internalPortReference spirit:componentRef="syncro_v_0" spirit:portRef="data_in3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>package_0_param2</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="package_0" spirit:portRef="param2"/>
+        <spirit:internalPortReference spirit:componentRef="syncro_v_0" spirit:portRef="data_in4"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>package_0_param3</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="package_0" spirit:portRef="param3"/>
+        <spirit:internalPortReference spirit:componentRef="syncro_v_0" spirit:portRef="data_in5"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>syncro_v_0_data_out1</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="syncro_v_0" spirit:portRef="data_out1"/>
+        <spirit:internalPortReference spirit:componentRef="process_v_0" spirit:portRef="SP"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>syncro_v_0_data_out2</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="syncro_v_0" spirit:portRef="data_out2"/>
+        <spirit:internalPortReference spirit:componentRef="process_v_0" spirit:portRef="MODO"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>syncro_v_0_data_out3</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="syncro_v_0" spirit:portRef="data_out3"/>
+        <spirit:internalPortReference spirit:componentRef="process_v_0" spirit:portRef="param1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>syncro_v_0_data_out4</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="syncro_v_0" spirit:portRef="data_out4"/>
+        <spirit:internalPortReference spirit:componentRef="process_v_0" spirit:portRef="param2"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>syncro_v_0_data_out5</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="syncro_v_0" spirit:portRef="data_out5"/>
+        <spirit:internalPortReference spirit:componentRef="process_v_0" spirit:portRef="param3"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>package_0_data_ready</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="package_0" spirit:portRef="data_ready"/>
+        <spirit:internalPortReference spirit:componentRef="syncro_v_0" spirit:portRef="sync_in"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>PWM_0_read_duty</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="PWM_0" spirit:portRef="read_duty"/>
+        <spirit:internalPortReference spirit:componentRef="syncro_v_1" spirit:portRef="sync_out"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>process_v_0_CV</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="process_v_0" spirit:portRef="CV"/>
+        <spirit:internalPortReference spirit:componentRef="syncro_v_1" spirit:portRef="data_in6"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>syncro_v_1_data_out6</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="syncro_v_1" spirit:portRef="data_out6"/>
+        <spirit:internalPortReference spirit:componentRef="PWM_0" spirit:portRef="duty"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+  </spirit:design>
+
+</bd:repository>

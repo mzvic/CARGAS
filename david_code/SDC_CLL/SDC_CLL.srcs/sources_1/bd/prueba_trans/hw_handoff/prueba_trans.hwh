@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jan 02 18:30:13 2020" VIVADOVERSION="2016.1">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a35ti" NAME="prueba_trans" PACKAGE="csg324" SPEEDGRADE="-1L"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" NAME="uart_txd_out" SIGIS="undef" SIGNAME="External_Ports_uart_rxd_in">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="External_Ports" PORT="uart_rxd_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="uart_rxd_in" SIGIS="undef" SIGNAME="External_Ports_uart_rxd_in">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="External_Ports" PORT="uart_txd_out"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES/>
+
+</EDKSYSTEM>

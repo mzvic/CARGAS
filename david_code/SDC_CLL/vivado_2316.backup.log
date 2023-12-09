@@ -1,0 +1,150 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Wed Sep 14 16:57:54 2022
+# Process ID: 2316
+# Current directory: C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20372 C:\Users\David\Desktop\Hardware\Cargas\02_09_22\SDC_CLL\SDC_CLL.xpr
+# Log file: C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/vivado.log
+# Journal file: C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 14 17:31:32 2022...
+_CLL.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.1/data/ip'.
+open_project: Time (s): cpu = 00:00:39 ; elapsed = 00:00:38 . Memory (MB): peak = 791.480 ; gain = 143.953
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/SDC_CLL.bd}
+Adding cell -- xilinx.com:ip:clk_wiz:5.3 - clk_wiz_0
+Adding cell -- xilinx.com:module_ref:AD1_driver_v:1.0 - AD1_driver_v_0
+Adding cell -- xilinx.com:module_ref:AD1_driver_v:1.0 - AD1_driver_v_1
+Adding cell -- xilinx.com:module_ref:AD1_driver_v:1.0 - AD1_driver_v_3
+Adding cell -- xilinx.com:module_ref:AD1_driver_v:1.0 - AD1_driver_v_2
+Adding cell -- xilinx.com:module_ref:AD1_driver_v:1.0 - AD1_driver_v_4
+Adding cell -- xilinx.com:module_ref:PWM:1.0 - PWM_0
+Adding cell -- xilinx.com:module_ref:package_ext:1.0 - package_ext_0
+Adding cell -- xilinx.com:module_ref:process_v:1.0 - process_v_0
+Adding cell -- xilinx.com:module_ref:alarm_HT_v:1.0 - alarm_HT_v_0
+Adding cell -- xilinx.com:module_ref:clk_box:1.0 - clk_box_0
+Adding cell -- xilinx.com:module_ref:pre_process:1.0 - pre_process_0
+Adding cell -- xilinx.com:module_ref:fixedPoint:1.0 - fixedPoint_0
+Successfully read diagram <SDC_CLL> from BD file <C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/SDC_CLL.bd>
+open_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 837.992 ; gain = 45.750
+update_module_reference {SDC_CLL_AD1_driver_v_1_0 SDC_CLL_AD1_driver_v_1_1 SDC_CLL_AD1_driver_v_3_0}
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/SDC_CLL.bd'
+INFO: [IP_Flow 19-1972] Upgraded SDC_CLL_AD1_driver_v_1_0 from AD1_driver_v_v1_0 1.0 to AD1_driver_v_v1_0 1.0
+INFO: [IP_Flow 19-1972] Upgraded SDC_CLL_AD1_driver_v_1_1 from AD1_driver_v_v1_0 1.0 to AD1_driver_v_v1_0 1.0
+INFO: [IP_Flow 19-1972] Upgraded SDC_CLL_AD1_driver_v_3_0 from AD1_driver_v_v1_0 1.0 to AD1_driver_v_v1_0 1.0
+Wrote  : <C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/SDC_CLL.bd> 
+update_module_reference: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 888.574 ; gain = 0.000
+update_module_reference SDC_CLL_alarm_HT_v_0_0
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/SDC_CLL.bd'
+INFO: [IP_Flow 19-1972] Upgraded SDC_CLL_alarm_HT_v_0_0 from alarm_HT_v_v1_0 1.0 to alarm_HT_v_v1_0 1.0
+Wrote  : <C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/SDC_CLL.bd> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. 
+Please check your design and connect them if needed: 
+/package_ext_0/in_11
+/package_ext_0/in_12
+
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/pre_process_0/SP3'(14) to net 'package_ext_0_out_03'(21) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/package_ext_0/in_10'(14) to net 'process_v_0_CV'(10) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/hdl/SDC_CLL.v
+Verilog Output written to : C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/hdl/SDC_CLL_wrapper.v
+Wrote  : <C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/SDC_CLL.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AD1_driver_v_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AD1_driver_v_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block process_v_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_box_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block package_ext_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pre_process_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AD1_driver_v_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fixedPoint_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block alarm_HT_v_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AD1_driver_v_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AD1_driver_v_4 .
+Exporting to file C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/hw_handoff/SDC_CLL.hwh
+Generated Block Design Tcl file C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/hw_handoff/SDC_CLL_bd.tcl
+Generated Hardware Definition File C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/hdl/SDC_CLL.hwdef
+[Wed Sep 14 17:10:43 2022] Launched synth_1...
+Run output will be captured here: C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.runs/synth_1/runme.log
+[Wed Sep 14 17:10:43 2022] Launched impl_1...
+Run output will be captured here: C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 1040.258 ; gain = 151.684
+reset_run synth_1
+update_module_reference SDC_CLL_alarm_HT_v_0_0
+INFO: [IP_Flow 19-4753] Inferred signal 'clock' from port 'clk' as interface 'clk'.
+WARNING: [IP_Flow 19-3153] Bus Interface 'clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/SDC_CLL.bd'
+INFO: [IP_Flow 19-1972] Upgraded SDC_CLL_alarm_HT_v_0_0 from alarm_HT_v_v1_0 1.0 to alarm_HT_v_v1_0 1.0
+Wrote  : <C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/SDC_CLL.bd> 
+launch_runs impl_1 -to_step write_bitstream
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. 
+Please check your design and connect them if needed: 
+/package_ext_0/in_11
+/package_ext_0/in_12
+
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/pre_process_0/SP3'(14) to net 'package_ext_0_out_03'(21) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/package_ext_0/in_10'(14) to net 'process_v_0_CV'(10) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+Verilog Output written to : C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/hdl/SDC_CLL.v
+Verilog Output written to : C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/hdl/SDC_CLL_wrapper.v
+Wrote  : <C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/SDC_CLL.bd> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AD1_driver_v_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AD1_driver_v_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block process_v_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_box_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block package_ext_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block pre_process_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AD1_driver_v_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fixedPoint_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block alarm_HT_v_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AD1_driver_v_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block AD1_driver_v_4 .
+Exporting to file C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/hw_handoff/SDC_CLL.hwh
+Generated Block Design Tcl file C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/hw_handoff/SDC_CLL_bd.tcl
+Generated Hardware Definition File C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.srcs/sources_1/bd/SDC_CLL/hdl/SDC_CLL.hwdef
+[Wed Sep 14 17:15:04 2022] Launched synth_1...
+Run output will be captured here: C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.runs/synth_1/runme.log
+[Wed Sep 14 17:15:04 2022] Launched impl_1...
+Run output will be captured here: C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 1125.145 ; gain = 0.000
+write_cfgmem  -format bin -size 128 -interface SPIx4 -loadbit "up 0x00000000 C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.runs/impl_1/SDC_CLL_wrapper.bit " -file "C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SdeC_CLL_140922.bin"
+Creating config memory files...
+Creating bitstream load up from address 0x00000000
+Loading bitfile C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.runs/impl_1/SDC_CLL_wrapper.bit
+Writing file C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SdeC_CLL_140922.bin
+Writing log file C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SdeC_CLL_140922.prm
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SPIX4
+Size               128M
+Start Address      0x00000000
+End Address        0x07FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0021728B    Sep 14 17:28:37 2022    C:/Users/David/Desktop/Hardware/Cargas/02_09_22/SDC_CLL/SDC_CLL.runs/impl_1/SDC_CLL_wrapper.bit
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 14 17:31:40 2022...

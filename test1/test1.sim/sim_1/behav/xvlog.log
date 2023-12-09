@@ -1,0 +1,24 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/opt/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_cdc_single
+INFO: [VRFC 10-311] analyzing module xpm_cdc_gray
+INFO: [VRFC 10-311] analyzing module xpm_cdc_handshake
+INFO: [VRFC 10-311] analyzing module xpm_cdc_pulse
+INFO: [VRFC 10-311] analyzing module xpm_cdc_array_single
+INFO: [VRFC 10-311] analyzing module xpm_cdc_sync_rst
+INFO: [VRFC 10-311] analyzing module xpm_cdc_async_rst
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/signal_gen_pin.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signal_gen_pin
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/div_f_pin.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module div_f_pin
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/divisor_f.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module divisor_f
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/pin_tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pin_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/pin_rx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pin_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/pack_ext.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pack_ext
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mzvic/voltage_receptor_fpga/david_code/Mod_COM_pines_A/package_ext.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module package_ext
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/mzvic/voltage_receptor_fpga/test1/test1.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
