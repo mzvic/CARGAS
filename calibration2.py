@@ -3,16 +3,11 @@ CALIBRATION PT100 / LAKESHORE
 
 POINTS TAKEN:{
 PT100: LAKESHORE
-//24.7: 21.5
-//25.1: 21.645
-17.25: 0.7
-25.1: 20.7
-30.1: 32.0
-30.5: 33.3
-42.0: 63.0
-68.0: 66.5
-74.0: 71.8
 
+
+3236: 87.00
+1524: 15
+1159: 0.550
 }
 """
 
@@ -20,8 +15,8 @@ PT100: LAKESHORE
 from sklearn.linear_model import LinearRegression
 lin = LinearRegression()
 
-x = [[17.25],[25.35],[30.1],[30.5],[42.0], [68],[74.0]]
-y = [[0.7],[22.1],[32.0],[33.3],[63.0], [66.5],[71.8]]
+x = [[1158],[2058],[3203]]
+y = [[0.51],[36],[80]]
 lin.fit(x, y)
 
 from sklearn.preprocessing import PolynomialFeatures
@@ -32,10 +27,6 @@ X_poly = poly.fit_transform(x)
 poly.fit(X_poly, y)
 lin2 = LinearRegression()
 lin2.fit(X_poly, y)
-
-import numpy as np
-
-
 
 import matplotlib.pyplot as plt
 

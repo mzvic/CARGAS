@@ -94,7 +94,7 @@ def lectura():
             average_output = sum(accumulated_data) / len(accumulated_data)
             post_avg = predict(average_output/2**6.00)
 
-            print(datetime.now().strftime("%H:%M:%S"), post_avg, average_output*3.3/4095)
+            print(average_output, datetime.now().strftime("%H:%M:%S"), post_avg, average_output*3.3/4095)
             graficar(post_avg)
 
             if opt == '2':
