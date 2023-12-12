@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/mzvic/CePIA/CARGAS/test1/test1.runs/synth_1'
+HD_PWD='/home/mzvic/CePIA/CARGAS/Vivado/test1/test1.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

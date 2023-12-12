@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="12" Path="/home/mzvic/CePIA/CARGAS/test1/test1.xpr">
+<Project Version="7" Minor="12" Path="/home/mzvic/CePIA/CARGAS/Vivado/test1/test1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="79ff1e77c424479bb13756226d042408"/>
@@ -146,6 +146,15 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="arch.bd" FileRelPathName="ip/arch_SDC_CLL_AD1_driver_v_0_2_0_0/arch_SDC_CLL_AD1_driver_v_0_2_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="arch.bd" FileRelPathName="hdl/arch.hwdef"/>
+        <CompFileExtendedInfo CompFileName="arch.bd" FileRelPathName="hw_handoff/arch_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="arch.bd" FileRelPathName="hw_handoff/arch.hwh"/>
+        <CompFileExtendedInfo CompFileName="arch.bd" FileRelPathName="arch_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="arch.bd" FileRelPathName="ip/arch_clk_wiz_0_0/arch_clk_wiz_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="arch.bd" FileRelPathName="hdl/arch.v"/>
+        <CompFileExtendedInfo CompFileName="arch.bd" FileRelPathName="ip/arch_package_ext_0_0/arch_package_ext_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="arch.bd" FileRelPathName="ip/arch_SDC_CLL_clk_box_0_0_0_0/arch_SDC_CLL_clk_box_0_0_0_0.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/arch/hdl/arch_wrapper.v">
         <FileInfo>
