@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1701712779">
-  <File Type="RDS-PROPCONSTRS" Name="arch_wrapper_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="arch_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-RDS" Name="arch_wrapper.vds"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1702407703">
   <File Type="VDS-TIMING-PB" Name="arch_wrapper_timing_summary_synth.pb"/>
-  <File Type="PA-TCL" Name="arch_wrapper.tcl"/>
   <File Type="VDS-TIMINGSUMMARY" Name="arch_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="arch_wrapper.dcp"/>
   <File Type="RDS-UTIL-PB" Name="arch_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="arch_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="arch_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="arch_wrapper.vds"/>
+  <File Type="PA-TCL" Name="arch_wrapper.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../david_code/Mod_COM_pines_A/signal_gen_pin.sv">

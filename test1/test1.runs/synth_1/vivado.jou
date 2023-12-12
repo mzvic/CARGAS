@@ -2,8 +2,8 @@
 # Vivado v2016.1 (64-bit)
 # SW Build 1538259 on Fri Apr  8 15:45:23 MDT 2016
 # IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
-# Start of session at: Mon Dec  4 14:59:39 2023
-# Process ID: 10084
+# Start of session at: Tue Dec 12 16:01:44 2023
+# Process ID: 14346
 # Current directory: /home/mzvic/CePIA/CARGAS/test1/test1.runs/synth_1
 # Command line: vivado -log arch_wrapper.vds -mode batch -messageDb vivado.pb -notrace -source arch_wrapper.tcl
 # Log file: /home/mzvic/CePIA/CARGAS/test1/test1.runs/synth_1/arch_wrapper.vds
