@@ -2,40 +2,11 @@ import sys
 import serial
 from serial.tools import list_ports
 import numpy as np
-from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLabel, QComboBox, QListWidget
+from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLabel, QComboBox, QListWidget, QCheckBox
 from PyQt6.QtGui import QFont
 from PyQt6.QtCore import Qt, QTimer
 import pyqtgraph as pg
-def modelo():
-    global lin2, poly
-    from sklearn.linear_model import LinearRegression
-    lin = LinearRegression()
-    
-    x = [[17.25],[25.1],[30.1],[30.5],[42.0], [68],[74.0]]
-    y = [[0.7],[20.7],[32.0],[33.3],[63.0], [66.5],[71.8]]
-    lin.fit(x, y)
 
-    from sklearn.preprocessing import PolynomialFeatures
-    
-    poly = PolynomialFeatures(degree=4)
-    X_poly = poly.fit_transform(x)
-    
-    poly.fit(X_poly, y)
-    lin2 = LinearRegression()
-    lin2.fit(X_poly, y)
-
-def predict(x):
-    global lin2, poly
-    return lin2.predict(poly.fit_transform([[x]]))[0][0]
-
-modelo()
-def F_FtoFF(msb,lsb):
-    a = bin(msb)
-    b = bin(lsb)
-    c = str('00000000')
-    l = 9-len(b)
-    out = int(a[2:]+c[0:l]+b[2:],2)
-    return out
 class SerialDataReader:
     def __init__(self, port):
         self.port = port
@@ -61,31 +32,29 @@ class DataPlotterWidget(QWidget):
         self.plot_widget = pg.PlotWidget()
         self.plot_widget.setTitle("Data Plot")
         self.plot_data_item = self.plot_widget.plot(pen='b')
-        self.selected_data_label = QLabel("Selected Data:")
-        self.selected_data_label.setFont(QFont("Arial", 12))
-        self.selected_data_label.setAlignment(Qt.AlignmentFlag.AlignCenter)
+
+        layouth = QHBoxLayout()
+        self.check_save_data = QCheckBox("Save Data")
+        self.serial_port_combobox = QComboBox()
+        self.save_data_button = QPushButton("Start")
+        self.save_data_button.setCheckable(True)
+
+
+        layouth.addWidget(self.check_save_data)
+        layouth.addWidget(self.serial_port_combobox)
+        layouth.addWidget(self.save_data_button)
+
 
         layout = QVBoxLayout()
         layout.addWidget(self.plot_widget)
-        layout.addWidget(self.selected_data_label)
+        layout.addLayout(layouth)
+
         self.setLayout(layout)
 
     def update_plot(self, x_data, y_data):
         self.plot_data_item.setData(x_data, y_data)
 
-class DataAcquisitionWidget(QWidget):
-    def __init__(self):
-        super().__init__()
 
-        self.serial_port_label = QLabel("Select Serial Port:")
-        self.serial_port_combobox = QComboBox()
-        self.save_data_button = QPushButton("Save Data")
-
-        self.layout = QVBoxLayout()
-        self.layout.addWidget(self.serial_port_label)
-        self.layout.addWidget(self.serial_port_combobox)
-        self.layout.addWidget(self.save_data_button)
-        self.setLayout(self.layout)
 
 class DataSelectionWidget(QWidget):
     def __init__(self):
@@ -117,13 +86,11 @@ class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
 
-        self.data_acquisition_widget = DataAcquisitionWidget()
         self.data_plotter_widget = DataPlotterWidget()
         self.data_selection_widget = DataSelectionWidget()
         self.data_print_widget = DataPrintWidget()
 
         self.layout = QHBoxLayout()
-        self.layout.addWidget(self.data_acquisition_widget)
         self.layout.addWidget(self.data_plotter_widget)
         self.layout.addWidget(self.data_selection_widget)
         self.setLayout(self.layout)
@@ -137,11 +104,9 @@ class MainWindow(QWidget):
         self.setGeometry(100, 100, 800, 400)
 
         # Populate serial port combobox with available ports
-        ports = [f"{i}" for i in serial.tools.list_ports.comports()]  # Assuming Linux, adjust for your platform
-        self.data_acquisition_widget.serial_port_combobox.addItems(ports)
+          # Assuming Linux, adjust for your platform
 
         # Connect signals and slots
-        self.data_acquisition_widget.save_data_button.clicked.connect(self.save_data)
         self.data_selection_widget.plot_saved_data_button.clicked.connect(self.plot_saved_data)
         self.data_plotter_widget.plot_widget.plotItem.getViewBox().sigRangeChanged.connect(self.update_plot_range)
 

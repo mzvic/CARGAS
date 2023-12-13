@@ -6,7 +6,7 @@ from PyQt6.QtWidgets import QApplication, QWidget, QVBoxLayout, QHBoxLayout, QPu
 from PyQt6.QtGui import QFont
 from PyQt6.QtCore import Qt, QTimer
 import pyqtgraph as pg
-import main1
+import main
 import time
 accumulated_data = []
 last_time = time.time()
@@ -101,7 +101,7 @@ class MainWindow(QWidget):
         def read_data():
             data = self.serial_data_reader.read_data()
             if data:
-                main1.proccess_data(data)
+                main.predict(data)
 
 
     def save_data(self):
