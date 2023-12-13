@@ -19,20 +19,24 @@ PT100: LAKESHORE
 
 from sklearn.linear_model import LinearRegression
 lin = LinearRegression()
+import numpy as np
 
-x = [[17.25],[25.1],[30.1],[30.5],[42.0], [68],[74.0]]
-y = [[0.7],[20.7],[32.0],[33.3],[63.0], [66.5],[71.8]]
+data=np.genfromtxt('1.txt', delimiter=',')
+
+x = data[:, 0].reshape(-1, 1)
+y = data[:, 1].reshape(-1, 1)
+
+print(x)
 lin.fit(x, y)
 
 from sklearn.preprocessing import PolynomialFeatures
 
-poly = PolynomialFeatures(degree=4)
-X_poly = poly.fit_transform(x)
+poly = PolynomialFeatures(degree=1)
 
+X_poly = poly.fit_transform(x)
 poly.fit(X_poly, y)
 lin2 = LinearRegression()
 lin2.fit(X_poly, y)
-
 
 import matplotlib.pyplot as plt
 
