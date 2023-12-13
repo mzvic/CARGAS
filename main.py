@@ -12,37 +12,28 @@ comms.timeout = 1
 comms.setPort("/dev/ttyUSB1")
 comms.open()
 
-fig, ax = plt.subplots()
-x, y = [], []
-line, = ax.plot(x, y)
-plt.ion()
 
 
 opt = input('1. Lectura\n2. Lectura y guardar\n')
 opt2 = input('1. Promediar\n2. No promediar\n')
+import matplotlib.pyplot as plt
+import numpy as np
 
-def modelo():
-    global lin2, poly
-    from sklearn.linear_model import LinearRegression
-    lin = LinearRegression()
-    
-    x = [[1158],[2058],[3203]]
-    y = [[0.51],[36],[80]]
-    lin.fit(x, y)
+data=np.genfromtxt('primera-toma.txt', delimiter=',')
 
-    from sklearn.preprocessing import PolynomialFeatures
-    
-    poly = PolynomialFeatures(degree=4)
-    X_poly = poly.fit_transform(x)
-    
-    poly.fit(X_poly, y)
-    lin2 = LinearRegression()
-    lin2.fit(X_poly, y)
+x = data[:, 0] # pt100
+y = data[:, 1] # lakeshore
 
-modelo()
+coef = np.polyfit(x, y, 2) # coeficientes 
+poly = np.poly1d(coef) # polinomio 
+
 def predict(x):
-    global lin2, poly
-    return lin2.predict(poly.fit_transform([[x]]))[0][0]
+    global  poly
+    return poly(x)
+fig, ax = plt.subplots()
+x, y = [], []
+line, = ax.plot(x, y)
+plt.ion()
 
 def graficar(valor):
     y.append(valor)
@@ -98,7 +89,7 @@ def lectura():
                 post_avg = predict(average_output)
 
                 print(average_output, datetime.now().strftime("%H:%M:%S"), post_avg, average_output*3.3/4095)
-                graficar(post_avg)
+                graficar(float(post_avg))
 
                 if opt == '2':
                     with open(f'./datos/{datetime_safe}.txt', 'a+') as f:

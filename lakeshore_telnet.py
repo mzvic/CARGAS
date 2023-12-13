@@ -1,0 +1,92 @@
+import telnetlib
+import time
+import serial
+import matplotlib.pyplot as plt
+from datetime import datetime
+import sys
+
+datetime_safe = datetime.now().isoformat()
+
+arr = []
+comms = serial.Serial()
+comms.baudrate = 19200
+comms.timeout = 1
+comms.setPort("/dev/ttyUSB1")
+comms.open()
+
+# Dirección IP y puerto
+host = '169.254.47.121'
+port = '7777'
+
+
+def temp_to_c(input):
+    return round(float(input) - 273.15,2)
+
+def F_FtoFF(msb,lsb):
+    a = bin(msb)
+    b = bin(lsb)
+    c = str('00000000')
+    l = 9-len(b)
+    out = int(a[2:]+c[0:l]+b[2:],2)
+    return out
+
+def lectura():
+    global arr, accumulated_data, data_count, last_time
+    rcv = comms.read(1)
+    
+    if rcv == b'\xc8': # 200
+        rcv = comms.read(1) # valor siguiente a 200
+        char_rcv = chr(rcv[0])
+        unicode_rcv = ord(char_rcv)
+        arr.append(unicode_rcv)
+
+    elif rcv == b'\xc9': # 201
+        rcv = comms.read(1) # valor siguiente a 201  
+        char_rcv = chr(rcv[0])
+        unicode_rcv = ord(char_rcv)   
+        arr.append(unicode_rcv)
+
+    elif rcv == b'\xca': # 202
+        arr = [] # vaciar array
+            
+    if len(arr) > 1: # si hay dos valores en el array
+        output = F_FtoFF(arr[0], arr[1])
+        
+        return output
+        
+    else:
+        return None
+    
+
+try:
+    tn = telnetlib.Telnet(host, port)
+    print("Conexión exitosa con el instrumento")
+
+    tn.write(b"*IDN?\n") #LEER ID del instrumento.
+    response = tn.read_until(b"\n", timeout=2).decode('ascii')
+    print("Identificación del instrumento:", response)
+
+    #Leer la temperatura actual del canal A
+    while (True):
+        lectura_fpga = lectura()
+        if lectura_fpga() != None:
+            
+            tn.write(b"KRDG? A\n")
+            ch_A = tn.read_until(b"\n", timeout=2).decode('ascii')
+
+            chac = temp_to_c(ch_A)
+
+            with open("datos".txt", "w") as f:
+                f.write(str(lectura_fpga)+","+str(chac)+"\n")
+                print(lectura_fpga, chac)
+
+except Exception as e:
+    print("Error de comunicación:", e)
+except KeyboardInterrupt:
+    print("Interrupción de teclado")
+    tn.close()
+    comms.close()
+    f.close()
+finally:
+    tn.close()
+    comms.close()
