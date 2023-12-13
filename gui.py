@@ -7,24 +7,64 @@ from PyQt6.QtGui import QFont
 from PyQt6.QtCore import Qt, QTimer
 import pyqtgraph as pg
 
-class SerialDataReader:
-    def __init__(self, port):
-        self.port = port
-        self.ser = None
+def select_ports_input_gui():
+    comms = serial.Serial()
+    comms.baudrate = 19200
+    comms.timeout = 1
+    ports = serial.tools.list_ports.comports()
+    output = []
+    for port in ports:
+        output.append(port.device)
+    return output
 
-    def open_serial_port(self):
-        try:
-            self.ser = serial.Serial(self.port, baudrate=9600)
-            return True
-        except serial.SerialException as e:
-            print(f"Error opening serial port: {e}")
-            return False
 
-    def read_data(self):
-        if self.ser:
-            return self.ser.readline().decode().strip()
+def predict(valor):
+    data = np.genfromtxt('data_calibration.txt', delimiter=',')
+
+    x = data[:, 0] # pt100
+    y = data[:, 1] # lakeshore
+
+    coef = np.polyfit(x, y, 9) # coeficientes 
+    poly = np.poly1d(coef) # polinomio
+    return poly(valor)
+def F_FtoFF(msb,lsb):
+    a = bin(msb)
+    b = bin(lsb)
+    c = str('00000000')
+    l = 9-len(b)
+    out = int(a[2:]+c[0:l]+b[2:],2)
+    return out
+def lectura():
+    global arr, last_time, comms
+    rcv = comms.read(1)
+    
+    if rcv == b'\xc8': # 200
+        rcv = comms.read(1) # valor siguiente a 200
+        char_rcv = chr(rcv[0])
+        unicode_rcv = ord(char_rcv)
+        arr.append(unicode_rcv)
+
+    elif rcv == b'\xc9': # 201
+        rcv = comms.read(1) # valor siguiente a 201  
+        char_rcv = chr(rcv[0])
+        unicode_rcv = ord(char_rcv)   
+        arr.append(unicode_rcv)
+
+    elif rcv == b'\xca': # 202
+        arr = [] # vaciar array
+            
+    if len(arr) > 1: # si hay dos valores en el array
+        output = F_FtoFF(arr[0], arr[1])
+        return output
+    else:
         return None
-
+def start_btn(port):
+    comms = serial.Serial()
+    comms.baudrate = 19200
+    comms.timeout = 1
+    comms.port = port
+    comms.open()
+    
 class DataPlotterWidget(QWidget):
     def __init__(self):
         super().__init__()
@@ -35,12 +75,16 @@ class DataPlotterWidget(QWidget):
 
         layouth = QHBoxLayout()
         self.check_save_data = QCheckBox("Save Data")
+        self.average = QCheckBox("Average")
         self.serial_port_combobox = QComboBox()
+        self.serial_port_combobox.addItems(select_ports_input_gui())
         self.save_data_button = QPushButton("Start")
+        self.save_data_button.clicked.connect(lambda: start_btn(self.serial_port_combobox.currentText()))
         self.save_data_button.setCheckable(True)
 
 
         layouth.addWidget(self.check_save_data)
+        layouth.addWidget(self.average)
         layouth.addWidget(self.serial_port_combobox)
         layouth.addWidget(self.save_data_button)
 
@@ -95,47 +139,13 @@ class MainWindow(QWidget):
         self.layout.addWidget(self.data_selection_widget)
         self.setLayout(self.layout)
 
-        self.serial_data_reader = SerialDataReader("")  # Replace with your serial port
-
         self.setup_ui()
 
     def setup_ui(self):
         self.setWindowTitle("Serial Data Reader")
         self.setGeometry(100, 100, 800, 400)
 
-        # Populate serial port combobox with available ports
-          # Assuming Linux, adjust for your platform
 
-        # Connect signals and slots
-        self.data_selection_widget.plot_saved_data_button.clicked.connect(self.plot_saved_data)
-        self.data_plotter_widget.plot_widget.plotItem.getViewBox().sigRangeChanged.connect(self.update_plot_range)
-
-        # Open the serial port
-        if self.serial_data_reader.open_serial_port():
-            self.start_reading_data()
-
-    def start_reading_data(self):
-        def read_data():
-            data = self.serial_data_reader.read_data()
-            if data:
-                data_values = list(map(float, data.split(',')))
-                self.data_plotter_widget.update_plot(list(range(len(data_values))), data_values)
-
-        timer = QTimer(self)
-        timer.timeout.connect(read_data)
-        timer.start(100)  # Read data every 100 milliseconds
-
-    def save_data(self):
-        # Add code to save data to a file or database
-        pass
-
-    def plot_saved_data(self):
-        # Add code to load and plot selected saved data
-        pass
-
-    def update_plot_range(self, vb, range):
-        # Add code to handle plot range changes if needed
-        pass
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

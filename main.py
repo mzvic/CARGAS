@@ -30,7 +30,16 @@ def select_ports_input():
     comms.open()
     return comms
     
-
+def select_ports_input_gui():
+    comms = serial.Serial()
+    comms.baudrate = 19200
+    comms.timeout = 1
+    ports = serial.tools.list_ports.comports()
+    output = []
+    for i in ports:
+        output.append(i)
+    return output
+        
 def predict(valor):
     data = np.genfromtxt('data_calibration.txt', delimiter=',')
 
@@ -125,8 +134,8 @@ def graficar(valor):
     plt.draw()
     plt.pause(0.01)
 
-comms = select_ports_input()
-plt.show()
+#comms = select_ports_input()
+#plt.show()
 
 # while True:
 #     lectura_fpga = lectura()
