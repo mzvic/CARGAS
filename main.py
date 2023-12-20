@@ -134,11 +134,11 @@ def graficar(valor):
     plt.draw()
     plt.pause(0.01)
 
-#comms = select_ports_input()
-#plt.show()
+comms = select_ports_input()
+plt.show()
 
-# while True:
-#     lectura_fpga = lectura()
-#     if lectura_fpga != None:
-#         escritura(lectura_fpga)
-#         graficar(predict(lectura_fpga))
+while True:
+    lectura_fpga = lectura()
+    if lectura_fpga != None:
+        escritura(lectura_fpga)
+        graficar(predict(lectura_fpga))

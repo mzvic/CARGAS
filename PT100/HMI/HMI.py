@@ -272,6 +272,7 @@ class Interfaz(QtWidgets.QMainWindow):
                 self._timer0.stop()
         else:
             try:
+
                 self.COMname = str(self.ui.nameCOM_edit.text())
                 self.fpga_comms.setPort(self.COMname)
                 print(f"Conectando con FPGA en puerto: {self.COMname}")
@@ -287,6 +288,17 @@ class Interfaz(QtWidgets.QMainWindow):
                 print(f"Estado de conexión con FPGA: {self._fpga_connected}")
                 self._timer0.start(500)
                 self._timer1.start(100)
+
+    def select_ports_input_gui():
+        comms = serial.Serial()
+        comms.baudrate = 19200
+        comms.timeout = 1
+        ports = serial.tools.list_ports.comports()
+        output = []
+        for port in ports:
+            output.append(port.device)
+        return output
+
         
    #MeTODOS DE TRANSMISIoN-----------------------------------------------------
     def enviarValor(self,pinout,data):
