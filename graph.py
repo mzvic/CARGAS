@@ -1,10 +1,7 @@
 import matplotlib.pyplot as plt
 import os
 import numpy as np
-
-for i in range(len(os.listdir('./datos'))):
-    print(str(i) + '. ' + os.listdir('./datos')[i])
-choice = input("Selecciona número: ")
+import sys
 
 #data = np.genfromtxt('./datos/{}'.format(os.listdir('./datos')[int(choice)]), delimiter=',')
 
@@ -40,5 +37,8 @@ def graph_stadistic(data):
 
     plt.show()
 
-if __name__ == "__main__":
-    graph_stadistic('./datos/{}'.format(os.listdir('./datos')[int(choice)]))
+if len(sys.argv) > 1:
+    graph_stadistic(sys.argv[1])
+
+else:
+    print("Usage: python graph.py <file>")
