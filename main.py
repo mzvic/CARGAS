@@ -4,8 +4,7 @@ from datetime import datetime
 import sys
 import numpy as np
 
-datetime_safe = datetime.now().isoformat()
-
+datetime_safe = datetime.now().isoformat().replace(':', '_')
 arr = []
 comms = serial.Serial()
 comms.baudrate = 19200
