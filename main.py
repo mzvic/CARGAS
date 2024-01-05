@@ -1,4 +1,5 @@
 import serial
+import serial.tools.list_ports 
 import matplotlib.pyplot as plt
 from datetime import datetime
 import sys
@@ -6,12 +7,21 @@ import numpy as np
 
 datetime_safe = datetime.now().isoformat().replace(':', '_')
 arr = []
-comms = serial.Serial()
-comms.baudrate = 19200
-comms.timeout = 1
-comms.setPort("/dev/ttyUSB1")
-comms.open()
-
+def select_ports_input():
+    global comms
+    comms = serial.Serial()
+    comms.baudrate = 19200
+    comms.timeout = 1
+    ports = serial.tools.list_ports.comports()
+    c = 1
+    for i in ports:
+        print("{}. {}".format(c,i))
+        c += 1
+    choice = int(input('Choose a port: '))
+    comms.port = ports[choice-1].device
+    comms.open()
+    return comms
+select_ports_input()
 fig, ax = plt.subplots()
 x, y = [], []
 line, = ax.plot(x, y)
