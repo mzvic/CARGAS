@@ -77,15 +77,14 @@ try:
 
     #Leer la temperatura actual del canal A
     while (True):
-        if lectura() != None:
-            lectura_fpga = lectura()
-
+        lectura_fpga = lectura()
+        if lectura_fpga != None:
             tn.write(b"KRDG? A\n")
             ch_A = tn.read_until(b"\n", timeout=2).decode('ascii')
 
             chac = temp_to_c(ch_A)
 
-            with open(datetime_safe+".txt", "w") as f:
+            with open("CAL"+datetime_safe+".txt", "a+") as f:
                 f.write(str(lectura_fpga)+","+str(chac)+"\n")
                 print(lectura_fpga, chac)
 
