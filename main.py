@@ -29,14 +29,17 @@ plt.ion()
 
 opt_save = input('Save? (y/n) ')
 opt_avg = input('Average? (y/n) ')
-
+opt_port = input('Port? (a/b) ').upper()
 def predict(valor):
-    data = np.genfromtxt('data_calibration.txt', delimiter=',')
+    if opt_port == 'A':
+        data = np.genfromtxt('a.txt', delimiter=',')
+    elif opt_port == 'B':
+        data = np.genfromtxt('b.txt', delimiter=',')
 
     x = data[:, 0] # pt100
     y = data[:, 1] # lakeshore
 
-    coef = np.polyfit(x, y, 9) # coeficientes 
+    coef = np.polyfit(x, y, 2) # coeficientes 
     poly = np.poly1d(coef) # polinomio
     return poly(valor)
 
@@ -110,12 +113,7 @@ def lectura():
 
 def guardar(valor, valor2):
     with open(f'{datetime_safe}.txt', 'a+') as f:
-        def handle_close(evt):
-            f.close()
-            comms.close()
-            plt.close()
-            sys.exit()
-        fig.canvas.mpl_connect('close_event', handle_close)
+
         try:
             f.write(f'{datetime.now().strftime("%H:%M:%S")},{valor},{valor2}\n')
         except KeyboardInterrupt:

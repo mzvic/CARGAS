@@ -5,9 +5,19 @@ import serial.tools.list_ports
 import matplotlib.pyplot as plt
 from datetime import datetime
 import sys
+import numpy as np
 
 datetime_safe = datetime.now().isoformat().replace(':', '_')
 arr = []
+def predict(valor):
+    data = np.genfromtxt('data_calibration.txt', delimiter=',')
+
+    x = data[:, 0] # pt100
+    y = data[:, 1] # lakeshore
+
+    coef = np.polyfit(x, y, 9) # coeficientes 
+    poly = np.poly1d(coef) # polinomio
+    return poly(valor)
 def select_ports_input():
     global comms
     comms = serial.Serial()
@@ -83,10 +93,8 @@ try:
             ch_A = tn.read_until(b"\n", timeout=2).decode('ascii')
 
             chac = temp_to_c(ch_A)
-
-            with open("CAL"+datetime_safe+".txt", "a+") as f:
-                f.write(str(lectura_fpga)+","+str(chac)+"\n")
-                print(lectura_fpga, chac)
+            chac_fpga = predict(lectura_fpga)
+            print(chac_fpga, chac)
 
 except Exception as e:
     print("Error de comunicación:", e)
@@ -94,7 +102,6 @@ except KeyboardInterrupt:
     print("Interrupción de teclado")
     tn.close()
     comms.close()
-    f.close()
 finally:
     tn.close()
     comms.close()
