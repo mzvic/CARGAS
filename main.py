@@ -32,9 +32,9 @@ opt_avg = input('Average? (y/n) ')
 opt_port = input('Port? (a/b) ').upper()
 def predict(valor):
     if opt_port == 'A':
-        data = np.genfromtxt('a.txt', delimiter=',')
+        data = np.genfromtxt('A_L2_SM1.txt', delimiter=',')
     elif opt_port == 'B':
-        data = np.genfromtxt('B_L2_SM1.txt', delimiter=',')
+        data = np.genfromtxt('B_L1_SM2.txt', delimiter=',')
 
     x = data[:, 0] # pt100
     y = data[:, 1] # lakeshore
